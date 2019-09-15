@@ -5,5 +5,5 @@ While the content of the AtBS is geared for a more general population versus a c
 
 ### Resources:
 Common resources from the book:
-[Interivew with Al Sweigart - Talk Python](https://talkpython.fm/episodes/show/19/automate-the-boring-stuff-with-python)
-[pythontutor](http://pythontutor.com)
+- [Interivew with Al Sweigart - Talk Python](https://talkpython.fm/episodes/show/19/automate-the-boring-stuff-with-python)
+- [pythontutor](http://pythontutor.com)

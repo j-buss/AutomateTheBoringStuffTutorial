@@ -1,9 +1,7 @@
 # Chapter 2 - Flow Control
 Chapter 2 adds in the ability to control the execution of the program with the introduction of boolean and comparison operators, "if" blocks, and loops. Al finishes the chapter with the import statements which allow you to build with other's contributions.
 
-### Lesson 4 - Flow charts, boolean values, comparison operators, boolean operators
-
-#### Notes
+#### Summary Notes
 
 **Comparison Operators**
 
@@ -25,57 +23,47 @@ Operator | Meaning
 - or
 - not
 
-### Lesson 5 - if, elif, and else
-
-
-#### Notes
-
-**Flow Control**
+**if-elif-else**
 - if statement: conditionally execute code 
 - elif: executes if condition true and all previous have been false
 - else: at the end; executes if all previous conditions have been false
 - falsey values: 0, 0.0 and empty string '' are considered false; however better to be explicit in code
 
-#### Code
-
-Code Name|Referenced|Description
----------|----------|-----------
-if_example.py|Lesson 5 Video|Basic if statement
-if_else_example.py|Lesson 5 Video|Basic if-else statement
-if_elif_example.py|Lesson 5 Video|Basic if-elif statement; without else
-string_truthey_exmaple.py|Lesson 5 Video|if-else with implied "truth" from non-blank string
-vampire.py|Book|if-elif multiple elifs
-vampire2.py|Book|if-elif multiple elifs; with bug in order of elifs
-littlekid.py|Book|if-elif-else
-
-### Lesson 6 - 
-
-**Loop**
+**while**
 - while: a loop which executes code, when reachs end of block, back to start, re-check condition
 - break: leave current cycle of loop, do not re-check condition
 - condition: leave current cycle of loop, back to start, and re-check condition
-
-**Code from video**
-- while_example.py
-- yourName.py
-- spam.py
-
-**Code from book**
-- yourName2.py
-- infiniteloop.py
-- swordfish.py
-
-### Lesson 7
-[for Loops and range()](https://youtu.be/HFQGxh1jY3g)
 
 **For Loop**
 - 
 - range function - 
 
-**Code from video**
-- for_loop_gauss.py - for loop to return the sum of all numbers from 1 to 100
+#### Code
 
-Importing Modules [import Statements, sys.exit(), the pyperclip Module](https://youtu.be/xJLj6fWfw6k)
+Code Name|Section|Channel|Description
+---------|----------|-----------
+if_example.py|Flow Control Statements|Video Lesson 5|Basic if statement
+if_else_example.py|Flow Control Statements|Video Lesson 5|Basic if-else statement
+if_elif_example.py|Flow Control Statments|Video Lesson 5|Basic if-elif statement; without else
+string_truthey_exmaple.py|Flow Control Statements|Video Lesson 5|if-else with implied "truth" from non-blank string
+vampire.py|Flow Control Statements|Book|if-elif multiple elifs
+vampire2.py|Flow Control Statements|Book|if-elif multiple elifs; with bug in order of elifs
+littlekid.py|Flow Control Statements|Book|if-elif-else
+while_example.py|While Loop Statements|Video Lesson 6|basic while loop for 5
+yourName.py|While Loop Statements|Video Lesson 6|while loop until enter 'your name'
+spam_while.py|While Loop Statements|Video Lesson 6|while loop with a continue
+yourName2.py|While Loop Statements|Book|infinite while loop with a break when enter 'your name'
+infiniteloop.py|While Loop Statements|Book|infinite loop
+swordfish.py|While Loop Statements|Book|infinite loop with a break and continue
+for_loop_gauss.py|For Loops and the Range() Function|Video Lesson 7|for loop to return the sum of all numbers from 1 to 100
 
-## Resources
+
+#### Accompanying Videos:
+- Lesson 4
+- Lesson 5
+- Lesson 6
+- Lesson 7 [for Loops and range()](https://youtu.be/HFQGxh1jY3g)
+- Importing Modules [import Statements, sys.exit(), the pyperclip Module](https://youtu.be/xJLj6fWfw6k)
+
+#### Resources
 [pythontutor.com](pythontutor.com)
