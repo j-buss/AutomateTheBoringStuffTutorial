@@ -1,7 +1,7 @@
 # Chapter 2 - Flow Control
-Chapter 2 adds in the ability to control the execution of the program with the introduction of boolean and comparison operators, "if" blocks, and loops. Al finishes the chapter with the import statements which allow you to build with other's contributions.
+Chapter 2 adds in the ability to control the execution of the program with the introduction of boolean and comparison operators, if blocks, and loops. Al finishes the chapter with the import statements which allow you to build with other's contributions.
 
-#### Summary Notes
+### Summary Notes
 
 **Comparison Operators**
 
@@ -38,10 +38,10 @@ Operator | Meaning
 - 
 - range function - 
 
-#### Code
+### Code
 
 Code Name|Section|Channel|Description
----------|----------|-----------
+---------|-------|-------|-----------
 if_example.py|Flow Control Statements|Video Lesson 5|Basic if statement
 if_else_example.py|Flow Control Statements|Video Lesson 5|Basic if-else statement
 if_elif_example.py|Flow Control Statments|Video Lesson 5|Basic if-elif statement; without else
@@ -58,12 +58,12 @@ swordfish.py|While Loop Statements|Book|infinite loop with a break and continue
 for_loop_gauss.py|For Loops and the Range() Function|Video Lesson 7|for loop to return the sum of all numbers from 1 to 100
 
 
-#### Accompanying Videos:
-- Lesson 4
-- Lesson 5
-- Lesson 6
-- Lesson 7 [for Loops and range()](https://youtu.be/HFQGxh1jY3g)
-- Importing Modules [import Statements, sys.exit(), the pyperclip Module](https://youtu.be/xJLj6fWfw6k)
+### Accompanying Videos:
+- [Lesson 4 - Flow charts, boolean values, comparison operators, boolean operators](https://www.youtube.com/watch?v=4XA9CKJJbr4)
+- [Lesson 5 - if, elif, and else](https://www.youtube.com/watch?v=lWeCgEbk-Ro)
+- [Lesson 6 - while Loops, break, and continue](https://www.youtube.com/watch?v=885qKiiKisI)
+- [Lesson 7 - for Loops and range()](https://www.youtube.com/watch?v=HFQGxh1jY3g)
+- [Lesson 8 - import Statements, sys.exit(), the pyperclip Module](https://www.youtube.com/watch?v=xJLj6fWfw6k)
 
-#### Resources
+### Resources
 [pythontutor.com](pythontutor.com)
