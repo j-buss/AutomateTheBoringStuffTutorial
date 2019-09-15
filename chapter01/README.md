@@ -1,25 +1,20 @@
 # Chapter 1 - Python Basics
-Brief notes from [Automate the Boring Stuff](https://automatetheboringstuff.com)
+In Chapter 1 
 [Chapter 1](https://automatetheboringstuff.com/chapter1/)
+ Al focuses on a few fundamental items that need to be addressed in any programming language. Namely data types and variables. In addition he walks through creating your first program.
 
-There are two videos that Al has shared online. They will walk through most of the conten
-Content:
+There are two videos that Al has shared online. They walk through all of the content of the chapter.
 
-## Video
-[Lesson 2 - Pythong Programming (Automate the Boring Stuff with Python](https://www.youtube.com/watch?v=7qHMXu99d88)
+## Video - Lesson 2
+[Lesson 2 - Python Programming (Automate the Boring Stuff with Python](https://www.youtube.com/watch?v=7qHMXu99d88)
+- Expressions: values and operators; eveluate to single value
+- Data Types: int, float, string
+- Variables: temporary store of data for processing
 
-- data types
-- variables and variable names
-## Video
-[Lesson 2 - Pythong Programming (Automate the Boring Stuff with Python](https://www.youtube.com/watch?v=7qHMXu99d88)
-## Experiment with some commands
-Within the idle[Integrated DeveLopment Environment](https://en.wikipedia.org/wiki/IDLE) try a "print" command.
-## Ask Smart Programming Questions
-- Describe the why and what
-- Describe the environment
-- Use some tools:
-- Search engine
-- [Stack Overlow] (http://stackoverflow.com/)
-- [“learn programming” subreddit](http://reddit.com/r/learnprogramming/)
-## Other References:
-- [Al Sweigart on Patreon](https://www.patreon.com/AlSweigart)
+## Video - Lesson 3
+[Lesson 3 - Python Programming (Automate the Boring Stuff with Python](https://www.youtube.com/watch?v=buMTH6ICnqk)
+- Your first program: hello.py 
+  - # comments are ignored by python
+  - execution of the program goes line by line (like reading a book)
+
+- Practice Questions

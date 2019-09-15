@@ -12,7 +12,7 @@ sudo apt-get install python3
 sudo apt-get install idle3
 sudo apt-get install python3-pip
 ```
-## Experiment with some commands
+### Experiment with some commands
 Open the idle [Integrated DeveLopment Environment](https://en.wikipedia.org/wiki/IDLE) and try a "print" command.
 - `idle3`
 - `print('Hello world!')`
