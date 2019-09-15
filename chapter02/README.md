@@ -49,6 +49,8 @@ Operator | Meaning
 - Standard Library: modules that come with python
 - sys.exit(): quit program
 - pyperclip: 3rd-party module with copy(), paste() functions for reading/writing to clipboard
+- import LIBRARY_NAME: load external libraries into the program; will require usage by calling LIBRARY_NAME.FUNCTION
+- from LIBRARY_NAME import \*: load all the functions from LIBRARY_NAME; does not require usage by calling LIBRARY_NAME.FUNCTION, but makes code less readable
 
 ## Code
 
@@ -68,6 +70,7 @@ yourName2.py|While Loop Statements|Book|infinite while loop with a break when en
 infiniteloop.py|While Loop Statements|Book|infinite loop
 swordfish.py|While Loop Statements|Book|infinite loop with a break and continue
 for_loop_gauss.py|For Loops and the Range() Function|Video Lesson 7|for loop to return the sum of all numbers from 1 to 100
+sysexit.py|Import Statments|Video Lesson 8|Demonstrate the sys.exit functionality
 
 ## Other Resources
 [pythontutor.com](pythontutor.com)
