@@ -6,12 +6,12 @@ Comparison Operators
 
 Operator | Meaning
 ---------|---------
-test==|Equal to
-t!=|Not equal to
-t<|Less than
-t>|Greater than
-tj<=|Less than or equal to
-t>=|Greater than or equal to
+"=="|Equal to
+"!="|Not equal to
+"<"|Less than
+">"|Greater than
+"<="|Less than or equal to
+">="|Greater than or equal to
 
 Boolean Values
 - True
