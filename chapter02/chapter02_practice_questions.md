@@ -146,7 +146,7 @@ for num in range(25):
 ```
 
 ![Extra Credit_Example of round()](../images/AtBS_Chp2_Extra_Credit_round.png)
-- abs()
+- abs(): Experiment with random library and absolute. How does the abs() function work with varying inputs?
 ```python
 # Extra credit question: investigate abs() function with using random scenarios and check the result
 
