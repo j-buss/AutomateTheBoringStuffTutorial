@@ -14,6 +14,10 @@ Chapter 3
 - argument: value passed in fucntion call
 - parameter: variable inside the function
 - keyword argument: argument added to a function call, but requires a keyword to identify the argumuent, generally optional
+- scope: is an area of source code or "container" for variables
+- global scope: is outside of all functions; cannot use any local variables from functions
+- local scope: is inside a function; if there is an assignment in a function it is local
+- try / except block: if an error happens in "try" block; the code in "except" block will execute; hopefully handling the error or displaying appropriate messages
 
 Code Name|Section|Channel|Description
 ---------|-------|-------|-----------

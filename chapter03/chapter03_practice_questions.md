@@ -17,20 +17,40 @@ A function defines the code; a function call executes the code defined in the fu
 
 Q:5. How many global scopes are there in a Python program? How many local scopes?
 
+There is 1 global scope. Local scopes are defined for each function. There would be as many local scopes as functions defined.
+
 Q:6. What happens to variables in a local scope when the function call returns?
+
+They are essentially deleted
 
 Q:7. What is a return value? Can a return value be part of an expression?
 
+
+
 Q:8. If a function does not have a return statement, what is the return value of a call to that function?
+
+If there is not an explicit return value the function returns the special value: None
 
 Q:9. How can you force a variable in a function to refer to the global variable?
 
+It is possible to add the "global" keyword prior to the variable reference
+
 Q:10. What is the data type of None?
+
+A special data type that only has the value None.
 
 Q:11. What does the import areallyourpetsnamederic statement do?
 
+It makes the code in "areallyourpetsnamederic" file available for execution within the calling code, essentially making the ability to reuse previously defined code
+
 Q:12. If you had a function named bacon() in a module named spam, how would you call it after importing spam?
+
+import spam
+spam.bacon()
+
 Q:13. How can you prevent a program from crashing when it gets an error?
+
+Add code to handle potential errors by implementing a "try/except" block.  
 
 Q:14. What goes in the try clause? What goes in the except clause?
 
