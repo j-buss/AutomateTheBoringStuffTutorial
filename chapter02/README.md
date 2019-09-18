@@ -55,6 +55,8 @@ Operator | Meaning
 ## Other Resources
 [pythontutor.com](pythontutor.com)
 
+-----
+
 # Chapter 2 - Practice Questions
 
 Q1. What are the two values of the Boolean data type? How do you write them?
