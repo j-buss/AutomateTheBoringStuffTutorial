@@ -18,19 +18,19 @@ In
 
 Q1. Which of the following are operators, and which are values?
 ###### operator
-- \*
+\*
 ###### value
-- 'hello'
+'hello'
 ###### value
-- \-88.8
+\-88.8
 ###### operator
-- \-
+\-
 ###### operator
-- \/
+\/
 ###### operator
-- \+
+\+
 ###### value
-- 5
+5
 
 Q:2. Which of the following is a variable, and which is a string?
 
