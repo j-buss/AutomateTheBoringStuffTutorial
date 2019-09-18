@@ -17,14 +17,20 @@ In
 ## Practice Questions
 
 Q1. Which of the following are operators, and which are values?
-
-*
-'hello'
--88.8
--
-/
-+
-5
+###### operator
+- *
+###### value
+- 'hello'
+###### value
+- -88.8
+###### operator
+- -
+###### operator
+- /
+###### operator
+- +
+###### value
+- 5
 
 Q:2. Which of the following is a variable, and which is a string?
 
@@ -78,7 +84,7 @@ Q10. Why does this expression cause an error? How can you fix it?
 ```python
 'I have eaten ' + 99 + ' burritos.'
 ```
-
+###### Here is the answer, simply use the str() to convert the int to a string
 ```python
 'I have eaten ' + str(99) + ' burritos.'
 ```
