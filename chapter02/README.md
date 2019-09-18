@@ -1,5 +1,5 @@
 # Chapter 2 - Flow Control
-Chapter 2 adds in the ability to control the execution of the program with the introduction of boolean and comparison operators, if blocks, and loops. Al finishes the chapter with the import statements which allow you to build with other's contributions.
+[Chapter 2](https://automatetheboringstuff.com/chapter2/) adds in the ability to control the execution of the program with the introduction of boolean and comparison operators, if blocks, and loops. Al finishes the chapter with the import statements which allow you to build with other's contributions.
 
 ## Accompanying Videos:
 - [Lesson 4 - Flow charts, boolean values, comparison operators, boolean operators](https://www.youtube.com/watch?v=4XA9CKJJbr4)
@@ -61,11 +61,11 @@ Operator | Meaning
 
 Q1. What are the two values of the Boolean data type? How do you write them?
 
-True, False
+###### True, False
 
 Q2. What are the three Boolean operators?
 
-and, or, not
+###### and, or, not
 
 Q3. Write out the truth tables of each Boolean operator (that is, every possible combination of Boolean values for the operator and what they evaluate to).
 
