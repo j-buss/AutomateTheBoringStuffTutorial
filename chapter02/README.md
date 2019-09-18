@@ -69,7 +69,7 @@ Q2. What are the three Boolean operators?
 
 Q3. Write out the truth tables of each Boolean operator (that is, every possible combination of Boolean values for the operator and what they evaluate to).
 
-**`and` Operator Truth Table**
+###### `and` Operator Truth Table
 
 Expression|Evaluation
 ----------|------
@@ -78,7 +78,7 @@ True and False|False
 False and True|False
 False and False|False
 
-**`or` Operator Truth Table**
+###### `or` Operator Truth Table
 
 Expression|Evaluation
 ----------|------
@@ -87,7 +87,7 @@ True or False|True
 False or True|True
 False or False|False
 
-**`not` Operator Truth Table**
+###### `not` Operator Truth Table
 
 Expression|Evaluation
 ----------|------
@@ -108,7 +108,7 @@ not ((5 > 4) or (3 == 5))|False
 
 Q5. What are the six comparison operators?
 
-**Comparison Operators**
+###### Comparison Operators
 
 Operator | Meaning
 ---------|---------
@@ -121,11 +121,11 @@ Operator | Meaning
 
 Q6. What is the difference between the equal to operator and the assignment operator?
 
-- equal to - compares values and returns true if equivalent
-- assignment - assigns a value to a variable 
+###### equal to - compares values and returns true if equivalent
+###### assignment - assigns a value to a variable 
 
 Q7. Explain what a condition is and where you would use one.
-- evaluation of truth; to control the flow of program logic
+###### evaluation of truth; to control the flow of program logic
 
 Q8. Identify the three blocks in this code:
 
@@ -150,14 +150,15 @@ while continue_flag == 'Y':
 
 Q10. What can you press if your program is stuck in an infinite loop?
 
-ctrl+c
+###### ctrl+c
 
 Q11. What is the difference between break and continue?
-- break: exit the entire loop, do not go back to beginning of loop to re-evaluate condition
-- continue: exit the current "cycle" of the loop, go back to beginning of loop to re-evaluate condition
+###### break: exit the entire loop, do not go back to beginning of loop to re-evaluate condition
+###### continue: exit the current "cycle" of the loop, go back to beginning of loop to re-evaluate condition
 
 Q12. What is the difference between range(10), range(0, 10) and range(0,10,1) in a for loop?
-Nothing
+
+###### Nothing
 
 Q13. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
 
@@ -182,7 +183,7 @@ spam.bacon()
 
 Extra credit: Look up the round() and abs() functions on the Internet, and find out what they do. Experiment with them in the interactive shell.
 
-- round(): Experiment with random library and round together. How does the round() function work with varying inputs?
+###### round(): Experiment with random library and round together. How does the round() function work with varying inputs?
 ```python
 # Extra credit question: investigate round() function with using random scenarios and check the result
 
@@ -205,7 +206,7 @@ for num in range(25):
 ```
 
 ![Extra Credit_Example of round()](../images/AtBS_Chp2_Extra_Credit_round.png)
-- abs(): Experiment with random library and absolute. How does the abs() function work with varying inputs?
+###### abs(): Experiment with random library and absolute. How does the abs() function work with varying inputs?
 ```python
 # Extra credit question: investigate abs() function with using random scenarios and check the result
 

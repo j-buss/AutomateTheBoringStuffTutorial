@@ -84,7 +84,7 @@ Q:14. What goes in the try clause? What goes in the except clause?
 ## Practice Projects
 For practice, write programs to do the following tasks.
 
-The Collatz Sequence
+### The Collatz Sequence
 
 Write a function named collatz() that has one parameter named number. If number is even, then collatz() should print number // 2 and return this value. If number is odd, then collatz() should print and return 3 * number + 1.
 
@@ -115,11 +115,11 @@ Enter number:
 
 1
 
-Input Validation
+### Input Validation
 
 Add try and except statements to the previous project to detect whether the user types in a noninteger string. Normally, the int() function will raise a ValueError error if it is passed a noninteger string, as in int('puppy'). In the except clause, print a message to the user saying they must enter an integer.
 
-######Collatz Function with Input Validation [included below, but also found in the collatz.py file]
+###### Collatz Function with Input Validation [included below, but also found in the collatz.py file]
 
 ```python
 def collatz(number):
@@ -149,7 +149,3 @@ def main():
 if __name__ == "__main__":
     main()
 ```
-
-
-Input Validation
-Add try and except statements to the previous project to detect whether the user types in a noninteger string. Normally, the int() function will raise a ValueError error if it is passed a noninteger string, as in int('puppy'). In the except clause, print a message to the user saying they must enter an integer.
