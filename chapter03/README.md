@@ -1,5 +1,5 @@
 # Chapter 3 - Functions
-Chapter 3 
+In chapter 3 Al introduces us to functions. Functions are these really cool "black boxes" of logic. Simply send some input and get some output. From a code simplicity perspective these bits of code are great. They help you keep your common code together and by encapsulating the logic it helps abstract away some of the details.
 
 ## Accompanying Videos:
 - [Lesson 9 - def Statements, arguments, and the None value](https://www.youtube.com/watch?v=WB4hJJkfhLU)
@@ -19,8 +19,3 @@ Chapter 3
 - local scope: is inside a function; if there is an assignment in a function it is local
 - try / except block: if an error happens in "try" block; the code in "except" block will execute; hopefully handling the error or displaying appropriate messages
 
-Code Name|Section|Channel|Description
----------|-------|-------|-----------
-helloFunc.py|Functions|Book|FILL IN
-helloFunc2.py|Functions|Book|FILL IN
-magic8Ball.py|Functions|Book|FILL IN
