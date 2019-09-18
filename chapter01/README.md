@@ -18,17 +18,17 @@ In
 
 Q1. Which of the following are operators, and which are values?
 ###### operator
-- *
+- \*
 ###### value
 - 'hello'
 ###### value
-- -88.8
+- \-88.8
 ###### operator
-- -
+- \-
 ###### operator
-- /
+- \/
 ###### operator
-- +
+- \+
 ###### value
 - 5
 
