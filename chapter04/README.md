@@ -2,20 +2,33 @@
 In [Chapter 4](https://automatetheboringstuff.com/chapter4/) Al explores 2 key data structures that are used within python that being a list and a tuple. 
 
 ## Accompanying Videos:
-- [Lesson 9 - def Statements, arguments, and the None value](https://www.youtube.com/watch?v=WB4hJJkfhLU)
-- [Lesson 10 - Global Scope and Local Scope](https://www.youtube.com/watch?v=M-CoVBK_bLE)
-- [Lesson 11 - Error Handling](https://www.youtube.com/watch?v=qS0UkqaYmfU)
-- [Lesson 12 - Writing a Guess the Number Game](https://www.youtube.com/watch?v=48WXHT0dfEY)
+- [Lesson 13 - Lists, Indexes, Slices, and the list() Function](https://www.youtube.com/watch?v=5n6o1MaXDoE)
+- [Lesson 14 - for Loops with Lists, Multiple Assignment, Augmented Assignment Operators](https://youtu.be/umTnflPbYww)
+- [Lesson 15 - Methods and the index(), append(), insert(), remove(), sort() List Methods](https://www.youtube.com/watch?v=Z9IxxW7428A)
 
 ## Summary Notes
 
-- list: a container type of data structure that can store multiple data; additionally the data need not be of the same type
+- list: a container type of data structure that can store multiple data; the data or items need not be of the same type
+- index: position of an item in the list, starts at 0
+- access: return items of a list by using the index number, can be negative [-1]
+- slice: return subset of items in the list refers to start : end (not including end point) ex. list[1:3]
+- list(): convert a value into a list
+- for loops: iterate over values in a list
+- multiple assignment: multiple assignment allows multiple variables at once; a, b = spam['first value','second value']
+- swap assignments: you can use multiple assignment to swap variables a, b = b, a
+- augmented assignment: swap += 1 is the same as swap = swap + 1
+- methods: functions are "called on" values
+- index(): returns index of item in list
+- append(): adds a value to end of list
+- insert(): adds value inside the list
+- remove(): removes an item specified by value
+- sort(): sorts items in list in place; reverse=True; key=str.lower
 
 ------
 # Chapter X - Practice Questions
 Q:1. What is []?
 
-###### that is an empty list
+##### that is an empty list
 
 Q:2. How would you assign the value 'hello' as the third value in a list stored in a variable named spam? (Assume spam contains [2, 4, 6, 8, 10].)
 
@@ -29,25 +42,25 @@ For the following three questions, let’s say spam contains the list ['a', 'b',
 
 Q:3. What does spam[int(int('3' * 2) // 11)] evaluate to?
 
-###### spam[int(int('3' * 2) // 11)]
-###### spam[int(int('33') // 11)]
-###### spam[int(33 // 11)]
-###### spam[int(3)]
-###### 'd'
+##### spam[int(int('3' * 2) // 11)]
+##### spam[int(int('33') // 11)]
+##### spam[int(33 // 11)]
+##### spam[int(3)]
+##### 'd'
 
 Q:4. What does spam[-1] evaluate to?
 
-###### 'd'
+##### 'd'
 
 Q:5. What does spam[:2] evaluate to?
 
-###### ['a','b']
+##### ['a','b']
 
 For the following three questions, let’s say bacon contains the list [3.14, 'cat', 11, 'cat', True].
 
 Q:6. What does bacon.index('cat') evaluate to?
 
-###### 1
+##### 1
 
 Q:7. What does bacon.append(99) make the list value in bacon look like?
 
@@ -59,15 +72,15 @@ Q:8. What does bacon.remove('cat') make the list value in bacon look like?
 
 Q:9. What are the operators for list concatenation and list replication?
 
-###### They are the same as for strings; + for concatenation and * for replication
+##### They are the same as for strings; + for concatenation and * for replication
 
 Q:10. What is the difference between the append() and insert() list methods?
 
-###### append(ITEM) will place a new _ITEM_ at the end of the list; insert(ITEM, LOCATION) will put a new _ITEM_ at a certain _LOCATION_
+##### append(ITEM) will place a new _ITEM_ at the end of the list; insert(ITEM, LOCATION) will put a new _ITEM_ at a certain _LOCATION_
 
 Q:11. What are two ways to remove values from a list?
 
-###### list_name.remove(ITEM) or list_name.pop(INDEX)
+##### list_name.remove(ITEM) or list_name.pop(INDEX) or del list_name(INDEX)
 ```python
 >>> ham = [10, 20, 'goodbye']
 >>> ham.remove(20)
@@ -77,34 +90,48 @@ Q:11. What are two ways to remove values from a list?
 'goodbye'
 >>> print(ham)
 [10]
+>>> del ham[0]
 ```
 
 Q:12. Name a few ways that list values are similar to string values.
 
-###### Letters in a string can be accessed with list notation. For example to get the first two letters of a string use STRING_NAME[:2]
-###### Strings and lists are able to use concatenation and multiplication operators
+##### Letters in a string can be accessed with list notation. For example to get the first two letters of a string use STRING_NAME[:2]
+##### Strings and lists are able to use concatenation and multiplication operators
 
 
 Q:13. What is the difference between lists and tuples?
 
-###### Lists are mutable, meaning that the values of them and the characteristics of them (length, etc.) can be changes; but tuples are immutable, once defined they cannot be changed
+##### Lists are mutable, meaning that the values of them and the characteristics of them (length, etc.) can be changes; but tuples are immutable, once defined they cannot be changed
 
 Q:14. How do you type the tuple value that has just the integer value 42 in it?
 
-###### tuple_exmple = ((42,))
+##### tuple_exmple = ((42,))
 
 Q:15. How can you get the tuple form of a list value? How can you get the list form of a tuple value?
 
-###### Use the function with the data type name to convert the item
-###### tuple(list_example) or list(tuple_example)
+##### Use the function with the data type name to convert the item
+##### tuple(list_example) or list(tuple_example)
 
 Q:16. Variables that “contain” list values don’t actually contain lists directly. What do they contain instead?
 
-
+##### They contain references to list values
 
 Q:17. What is the difference between copy.copy() and copy.deepcopy()?
 
-Comma Code
+##### copy will create a copy, but objects in the outer object are not copied
+
+```python
+>>> list_a = [10, [21, 22], 30]
+>>> list_b = list_a.copy()
+>>> list_b.append('aa')
+>>> list_b[1].append(999)
+>>> list_b
+[10, [21, 22, 999], 30, 'aa']
+>>> list_a
+[10, [21, 22, 999], 30]
+```
+
+#### Comma Code
 
 Say you have a list value liek this:
 
@@ -136,30 +163,45 @@ if __name__ == "__main__":
 ```
 
 
-Character Picture Grid
+### Character Picture Grid
 Say you have a list of lists where each value in the inner lists is a one-character string, like this:
 
 
 grid = [['.', '.', '.', '.', '.', '.'],
+
         ['.', 'O', 'O', '.', '.', '.'],
+
         ['O', 'O', 'O', 'O', '.', '.'],
+
         ['O', 'O', 'O', 'O', 'O', '.'],
+
         ['.', 'O', 'O', 'O', 'O', 'O'],
+
         ['O', 'O', 'O', 'O', 'O', '.'],
+
         ['O', 'O', 'O', 'O', '.', '.'],
+
         ['.', 'O', 'O', '.', '.', '.'],
+
         ['.', '.', '.', '.', '.', '.']]
+
 You can think of grid[x][y] as being the character at the x- and y-coordinates of a “picture” drawn with text characters. The (0, 0) origin will be in the upper-left corner, the x-coordinates increase going right, and the y-coordinates increase going down.
 
 Copy the previous grid value, and write code that uses it to print the image.
 
 
 ..OO.OO..
+
 .OOOOOOO.
+
 .OOOOOOO.
+
 ..OOOOO..
+
 ...OOO...
+
 ....O....
+
 Hint: You will need to use a loop in a loop in order to print grid[0][0], then grid[1][0], then grid[2][0], and so on, up to grid[8][0]. This will finish the first row, so then print a newline. Then your program should print grid[0][1], then grid[1][1], then grid[2][1], and so on. The last thing your program will print is grid[8][5].
 
 Also, remember to pass the end keyword argument to print() if you don’t want a newline printed automatically after each print() call.
