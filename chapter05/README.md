@@ -1,5 +1,5 @@
 # Chapter 5 - Dictionaries and Structuring Data
-In [Chapter 5](https://automatetheboringstuff.com/chapter5/) 
+In [Chapter 5](https://automatetheboringstuff.com/chapter5/) the main topic is dictionaries. They are very similar to lists, but insteadh store key-value pairs of information rather than an ordered list. Dictionaries are used extensively in python.
 
 ## Summary Notes
 
@@ -30,24 +30,22 @@ Q:2. What does a dictionary value with a key 'foo' and a value 42 look like?
 
 Q:3. What is the main difference between a dictionary and a list?
 
-###### a list generally stores individual items which are ordered; a dictionary stores unordered items which are referred to/accessed by a key
+##### a list generally stores individual items which are ordered; a dictionary stores unordered items which are referred to/accessed by a key
 
 Q:4. What happens if you try to access spam['foo'] if spam is {'bar': 100}?
 
 ##### an error will result: 'KeyError'
-![Dictionary KeyError](../images/dictionary_KeyError.png)
-
-![Dictionary KeyError](../images/dictionary_KeyError.png){:width="250px"}
-
 <p align="center">
-  <img src="../images/dictionary_KeyError.png" width="250">
+  <img src="../images/dictionary_KeyError.png" width="750">
 </p>
 
 Q:5. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.keys()?
 
 ##### there is no difference.  first is checking to see if 'cat' is one of the values of the spam dictionary
 
-![Dictionary Check Key and Values](../images/dictionary_check_keys_values.png)
+<p align="center">
+  <img src="../images/dictionary_check_keys_values.png" width="750">
+</p>
 
 Q:6. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.values()?
 

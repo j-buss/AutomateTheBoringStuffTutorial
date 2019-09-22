@@ -25,7 +25,7 @@ In [Chapter 4](https://automatetheboringstuff.com/chapter4/) Al explores 2 key d
 - sort(): sorts items in list in place; reverse=True; key=str.lower
 
 ------
-# Chapter X - Practice Questions
+# Chapter 4 - Practice Questions
 Q:1. What is []?
 
 ##### that is an empty list
