@@ -1,16 +1,16 @@
 # Chapter 5 - Dictionaries and Structuring Data
 In [Chapter 5](https://automatetheboringstuff.com/chapter5/) 
 
-## Accompanying Videos:
-- [Lesson 9 - def Statements, arguments, and the None value](https://www.youtube.com/watch?v=WB4hJJkfhLU)
-- [Lesson 10 - Global Scope and Local Scope](https://www.youtube.com/watch?v=M-CoVBK_bLE)
-- [Lesson 11 - Error Handling](https://www.youtube.com/watch?v=qS0UkqaYmfU)
-- [Lesson 12 - Writing a Guess the Number Game](https://www.youtube.com/watch?v=48WXHT0dfEY)
-
 ## Summary Notes
 
-- blab: blab blab blab
-
+- dictionary: collection of key-value pairs; similar to a list, however the values are unordered and stored / accessed via a key
+- dictname.values(): dictionary method for accessing all the values; returns a "list like" object *dict_values*
+- dictname.keys(): dictionary method for accessing all the keys; returns a "list like" object *dict_keys*
+- dictname.items(): dictionary method for accessing all the items; returns a "list like" object of tuples 
+- check for membership: use _in_ or _not int_ similar to lists; can use in conjunction with the methods: _values()_, _keys()_, or _items()_; usage of the dictname defaults to searching the keys
+- dictname.get(KEY, DEFAULTVALUE): will return the value of _KEY_ if it exists in the dictionary; else it will return the _DEFAULTVALUE_
+- dictname.setdefault(KEY, VALUE): set _VALUE_ in a dictionary for _KEY_ if that key does not already exist in dictionary
+- pprint.pprint(DICTNAME): pretty print; required import of pprint library
 ------
 # Chapter 5 - Practice Questions
 Q:1. What does the code for an empty dictionary look like?
@@ -36,6 +36,12 @@ Q:4. What happens if you try to access spam['foo'] if spam is {'bar': 100}?
 
 ##### an error will result: 'KeyError'
 ![Dictionary KeyError](../images/dictionary_KeyError.png)
+
+![Dictionary KeyError](../images/dictionary_KeyError.png){:width="250px"}
+
+<p align="center">
+  <img src="../images/dictionary_KeyError.png" width="250">
+</p>
 
 Q:5. If a dictionary is stored in spam, what is the difference between the expressions 'cat' in spam and 'cat' in spam.keys()?
 
@@ -83,18 +89,24 @@ Inventory:
 - Total number of items: 62
 Hint: You can use a for loop to loop through all the keys in a dictionary.
 
-
+```python
 # inventory.py
-stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
 
 def displayInventory(inventory):
     print("Inventory:")
     item_total = 0
     for k, v in inventory.items():
-        # FILL IN THE CODE HERE
+        print(v, k)
+        item_total += v
     print("Total number of items: " + str(item_total))
 
-displayInventory(stuff)
+def main():
+    stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
+    displayInventory(stuff)
+
+if __name__ == "__main__":
+    main()
+```
 
 ### List to Dictionary Function for Fantasy Game Inventory
 Imagine that a vanquished dragon’s loot is represented as a list of strings like this:
@@ -104,14 +116,27 @@ dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 
 Write a function named addToInventory(inventory, addedItems), where the inventory parameter is a dictionary representing the player’s inventory (like in the previous project) and the addedItems parameter is a list like dragonLoot. The addToInventory() function should return a dictionary that represents the updated inventory. Note that the addedItems list can contain multiples of the same item. Your code could look something like this:
 
+```python
+import fantasy_game_display
 
 def addToInventory(inventory, addedItems):
     # your code goes here
+    for item in addedItems:
+        if item in inventory:
+            inventory[item] += 1
+        else:
+            inventory.setdefault(item, 1)
+    return inventory
 
-inv = {'gold coin': 42, 'rope': 1}
-dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
-inv = addToInventory(inv, dragonLoot)
-displayInventory(inv)
+def main():
+    inv = {'gold coin': 42, 'rope': 1}
+    dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
+    inv = addToInventory(inv, dragonLoot)
+    fantasy_game_display.displayInventory(inv)
+
+if __name__ == "__main__":
+    main()
+```
 The previous program (with your displayInventory() function from the previous project) would output the following:
 
 
