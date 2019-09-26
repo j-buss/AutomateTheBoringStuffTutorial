@@ -41,57 +41,37 @@ Q:6. Parentheses and periods have specific meanings in regular expression syntax
 
 Q:7. The findall() method returns a list of strings or a list of tuples of strings. What makes it return one or the other?
 
-Q:
+##### If there are groups in the regular expression then it will return lists of tuples of strings; else it will return simply a list of strings
 
-8. What does the | character signify in regular expressions?
+Q:8. What does the | character signify in regular expressions?
 
-Q:
+##### It signifies the OR command. Essentially it will return the expression before or after the pipe. It will only return the first occurrence.
 
-9. What two things does the ? character signify in regular expressions?
+Q:9. What two things does the ? character signify in regular expressions?
 
-Q:
 
-10. What is the difference between the + and * characters in regular expressions?
 
-Q:
+Q:10. What is the difference between the + and * characters in regular expressions?
 
-11. What is the difference between {3} and {3,5} in regular expressions?
+Q:11. What is the difference between {3} and {3,5} in regular expressions?
 
-Q:
+Q:12. What do the \d, \w, and \s shorthand character classes signify in regular expressions?
 
-12. What do the \d, \w, and \s shorthand character classes signify in regular expressions?
+Q:13. What do the \D, \W, and \S shorthand character classes signify in regular expressions?
 
-Q:
+Q:14. How do you make a regular expression case-insensitive?
 
-13. What do the \D, \W, and \S shorthand character classes signify in regular expressions?
+Q:15. What does the . character normally match? What does it match if re.DOTALL is passed as the second argument to re.compile()?  
 
-Q:
+Q:16. What is the difference between these two: .* and .*?
 
-14. How do you make a regular expression case-insensitive?
+Q:17. What is the character class syntax to match all numbers and lowercase letters?
 
-Q:
+Q:18. If numRegex = re.compile(r'\d+'), what will numRegex.sub('X', '12 drummers, 11 pipers, five rings, 3 hens') return?
 
-15. What does the . character normally match? What does it match if re.DOTALL is passed as the second argument to re.compile()?
+Q:19. What does passing re.VERBOSE as the second argument to re.compile() allow you to do?
 
-Q:
-
-16. What is the difference between these two: .* and .*?
-
-Q:
-
-17. What is the character class syntax to match all numbers and lowercase letters?
-
-Q:
-
-18. If numRegex = re.compile(r'\d+'), what will numRegex.sub('X', '12 drummers, 11 pipers, five rings, 3 hens') return?
-
-Q:
-
-19. What does passing re.VERBOSE as the second argument to re.compile() allow you to do?
-
-Q:
-
-20. How would you write a regex that matches a number with commas for every three digits? It must match the following:
+Q:20. How would you write a regex that matches a number with commas for every three digits? It must match the following:
 
 '42'
 
@@ -105,9 +85,7 @@ but not the following:
 
 '1234' (which lacks commas)
 
-Q:
-
-21. How would you write a regex that matches the full name of someone whose last name is Nakamoto? You can assume that the first name that comes before it will always be one word that begins with a capital letter. The regex must match the following:
+Q:21. How would you write a regex that matches the full name of someone whose last name is Nakamoto? You can assume that the first name that comes before it will always be one word that begins with a capital letter. The regex must match the following:
 
 'Satoshi Nakamoto'
 
@@ -125,9 +103,7 @@ but not the following:
 
 'Satoshi nakamoto' (where Nakamoto is not capitalized)
 
-Q:
-
-22. How would you write a regex that matches a sentence where the first word is either Alice, Bob, or Carol; the second word is either eats, pets, or throws; the third word is apples, cats, or baseballs; and the sentence ends with a period? This regex should be case-insensitive. It must match the following:
+Q:22. How would you write a regex that matches a sentence where the first word is either Alice, Bob, or Carol; the second word is either eats, pets, or throws; the third word is apples, cats, or baseballs; and the sentence ends with a period? This regex should be case-insensitive. It must match the following:
 
 'Alice eats apples.'
 
