@@ -23,8 +23,43 @@ In [Chapter 6](https://automatetheboringstuff.com/chapter6/) we learn about mani
 
 ------
 ## Project: Password Locker
+```python
+#! python3
+# pw.py - An insecure password locker program.
+PASSWORDS = {'email': 'F7minlBDDuvMJuxESSKHFhTxFtjVB6',
+             'blog': 'VmALvQyKAxiVH5G8v01if1MLZF3sdt',
+             'luggage': '12345'}
+
+import sys
+import pyperclip
+
+if len(sys.argv) < 2:
+    print('Usage: python pw.py [account] - copy account password')
+    sys.exit()
+
+account = sys.argv[1] # first command line arg is the account name
+
+if account in PASSWORDS:
+    pyperclip.copy(PASSWORDS[account])
+    print('Password for ' + account + ' copied to clipboard.')
+else:
+    print('There is no account named ' + account)
+```
 
 ## Project: Adding Bullets to Wiki Markup
+```python
+#! /usr/bin/python3
+import pyperclip
+
+text = pyperclip.paste()
+lines = text.split('\n')
+
+for i in range(len(lines)):
+    lines[i] = '* ' + lines[i] 
+
+text = '\n'.join(lines)
+pyperclip.copy(text)
+```
 
 ## Chapter 6 - Practice Questions
 Q:1. What are escape characters?
@@ -96,6 +131,33 @@ Q:10. How can you trim whitespace characters from the beginning or end of a stri
 ```python
 >>> '     extra space     '.rstrip()
 '     extra space'
+```
+
+## Practice Project
+
+### Table Printer
+```python
+tableData = [['apples', 'oranges', 'cherries', 'banana'],
+        ['Alice', 'Bob', 'Carol', 'David'],
+        ['dogs','cats','moose','goose']]
+
+def printTable(listoflists):
+    numberoflists = len(listoflists)
+    numberofitems = len(listoflists[0]) # assuming that all inner lists are the same size
+    maxoflists = []
+    for innerlist in listoflists:
+        maxlen = len(max(innerlist, key=len))
+        maxoflists.append(maxlen)
+    for i in range(numberofitems): # of items
+        for j in range(numberoflists): # of lists
+            print(listoflists[j][i].rjust(maxoflists[j]),' ',end='',sep='')
+        print()
+
+def main():
+    printTable(tableData)
+
+if __name__ == "__main__":
+    main()
 ```
 
 ## Extras

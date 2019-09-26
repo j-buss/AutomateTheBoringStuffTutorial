@@ -11,7 +11,7 @@ def printTable(listoflists):
         maxoflists.append(maxlen)
     for i in range(numberofitems): # of items
         for j in range(numberoflists): # of lists
-            print(listoflists[j][i].rjust(maxoflists[j]),end='')
+            print(listoflists[j][i].rjust(maxoflists[j]),' ',end='',sep='')
         print()
 
 def main():
