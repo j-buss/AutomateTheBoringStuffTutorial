@@ -2,15 +2,17 @@ tableData = [['apples', 'oranges', 'cherries', 'banana'],
         ['Alice', 'Bob', 'Carol', 'David'],
         ['dogs','cats','moose','goose']]
 
-max_len = []
-
-def printTable(listlist):
-    for columns in range(len(listlist)):
-        print(listlist[columns])
-        for items in range(len(listlist[columns])):
-            if max_len[columns] < len(listlist[columns][items]):
-                max_len[columns] = len(listlist[columns][items])
-                
+def printTable(listoflists):
+    numberoflists = len(listoflists)
+    numberofitems = len(listoflists[0]) # assuming that all inner lists are the same size
+    maxoflists = []
+    for innerlist in listoflists:
+        maxlen = len(max(innerlist, key=len))
+        maxoflists.append(maxlen)
+    for i in range(numberofitems): # of items
+        for j in range(numberoflists): # of lists
+            print(listoflists[j][i].rjust(maxoflists[j]),end='')
+        print()
 
 def main():
     printTable(tableData)
