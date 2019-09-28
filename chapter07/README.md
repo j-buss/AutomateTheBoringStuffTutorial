@@ -49,27 +49,66 @@ Q:8. What does the | character signify in regular expressions?
 
 Q:9. What two things does the ? character signify in regular expressions?
 
+##### the "?" character flags the previous group as optional e.g. "bat(wo)?man" would identify both batman and batwoman
 
+##### the second meaning is the "non-greedy" fashion; whereby with multiple possible matches it selects the shorter one
 
 Q:10. What is the difference between the + and * characters in regular expressions?
 
+##### the '+' character signifies that regex should match one or more of the pattern; the '\*' character signifies zero or more
+
 Q:11. What is the difference between {3} and {3,5} in regular expressions?
+
+##### the expression {3} signifies that the previous group should be matched 3 times; whereas the {3,5} designation signifies that the previous group should be matched within the range of 3 - 5 (i.e. 3, 4, or 5 times)
 
 Q:12. What do the \d, \w, and \s shorthand character classes signify in regular expressions?
 
+Character Class | Meaning
+----------------|---------
+\\d|any digit (0-9)
+\\w|any "word" (digit or letter)
+\\s|any space (space, tab, newline)
+\\D|any non-digit (0-9)
+\\W|any non-"word" (digit or letter)
+\\S|any non-space (space, tab, newline)
+
 Q:13. What do the \D, \W, and \S shorthand character classes signify in regular expressions?
+
+##### see the previous question
 
 Q:14. How do you make a regular expression case-insensitive?
 
+##### you can add the re.IGNORECASE or re.I as the second argument of the "re.compile" statement
+```python
+robocop = re.compile(r'robocop', re.I)
+```
+
 Q:15. What does the . character normally match? What does it match if re.DOTALL is passed as the second argument to re.compile()?  
+
+##### the "." character matches any character except newline; if you include the re.DOTALL into the expression it will also include the newline character
 
 Q:16. What is the difference between these two: .* and .*?
 
+##### first will match in a greedy way; in which it groups as much of the text as possible; the second with the '?' will match in a non-greedy way
+
 Q:17. What is the character class syntax to match all numbers and lowercase letters?
+
+##### [a-z0-9]
 
 Q:18. If numRegex = re.compile(r'\d+'), what will numRegex.sub('X', '12 drummers, 11 pipers, five rings, 3 hens') return?
 
+##### It replaces the numbers with 'X'
+
+```python
+>>> import re
+>>> numRegex = re.compile(r'\d+')
+>>> numRegex.sub('X', '12 drummers, 11 pipers, five rings, 3 hens')
+'X drummers, X pipers, five rings, X hens'
+```
+
 Q:19. What does passing re.VERBOSE as the second argument to re.compile() allow you to do?
+
+##### ignore whitespace and comments inside the regular expression string
 
 Q:20. How would you write a regex that matches a number with commas for every three digits? It must match the following:
 
@@ -122,3 +161,7 @@ but not the following:
 'ALICE THROWS FOOTBALLS.'
 
 'Carol eats 7 cats.'
+
+## Other Resoures
+
+[pythex](https://pythex.org/) is an online python regex tester; you can test out the regular expressions and text
