@@ -9,7 +9,35 @@ In [Chapter 7](https://automatetheboringstuff.com/chapter7/)
 
 - regular expression: specify a specific text pattern to search for
 - regex: abreviation for regular expression
-- 
+
+### Regex Review
+
+Character Class | Meaning
+----------------|---------
+\\d|any digit (0-9)
+\\w|any "word" (digit or letter)
+\\s|any space (space, tab, newline)
+\\D|any non-digit (0-9)
+\\W|any non-"word" (digit or letter)
+\\S|any non-space (space, tab, newline)
+\*|match zero or more
+\?|match zero or more
+\+|match one or more
+{n}|match exactly n occurences
+{n,}|match n or more
+{,m}|matchs 0 to m
+{n,m}|matches at least n and at most m
+suffix - "?"|performs a nongreedy match
+^ - prefix|string must begin with
+suffix - "$"|string must end with
+. | matches any character except newline
+[abc] | matches any character between the brackets
+\[^abc] | matches any character that isn't between the brackets
+re.IGNORECASE | optional second argument to "re.compile"
+re.VERBOSE | optional second argument to "re.compile" to allow white space in the definition
+re.DOTALL | optional second argument to "re.compile" to allow the dot character to match all including newline
+search()|return a matched object
+sub()|use the search to substitute strings with the matched pattern
 
 ------
 ## Project: Phone Number and Email Address Extractor
