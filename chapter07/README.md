@@ -1,5 +1,5 @@
 # Chapter 7 - Pattern Matching with Regular Expressions
-In [Chapter 7](https://automatetheboringstuff.com/chapter7/) 
+In [Chapter 7](https://automatetheboringstuff.com/chapter7/) we review "Regular Expressions" a very powerful and concise way to search for text within a string. There are many regular expression items which can confer a meaning to search for a string. The **Extras** section at the end lists a few online resources to help test the definition of regex patterns.
 
 ## Accompanying Videos:
 - [Lesson 23 - Regular Expressions Introduction](https://youtu.be/ruRYJiV2hI0)
@@ -12,7 +12,7 @@ In [Chapter 7](https://automatetheboringstuff.com/chapter7/)
 
 ### Regex Review
 
-Character Class | Meaning
+Regex Item | Meaning
 ----------------|---------
 \\d|any digit (0-9)
 \\w|any "word" (digit or letter)
@@ -28,7 +28,7 @@ Character Class | Meaning
 {,m}|matchs 0 to m
 {n,m}|matches at least n and at most m
 suffix - "?"|performs a nongreedy match
-^ - prefix|string must begin with
+"^" - prefix|string must begin with
 suffix - "$"|string must end with
 . | matches any character except newline
 [abc] | matches any character between the brackets
