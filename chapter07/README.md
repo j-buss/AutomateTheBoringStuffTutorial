@@ -124,6 +124,26 @@ but not the following:
 
 '1234' (which lacks commas)
 
+```python
+import re
+
+def findThreeDigitCommas(testString):
+    threeDigitCommas = re.compile(r'^\d{1,3}(,\d{3})*$')
+    mo = threeDigitCommas.search(testString)
+    try:
+        print('''The "three Digit Comma" number: ''' + mo.group() + ''' was found in: ''' + testString)
+    except:
+        print('''--------''' + testString + ''' doesn't have a "three Digit Comma" number''')
+
+def main():
+    testlist = ['42', '1,234', '1234','6,368,745','12,34,567','1234']
+    for n in testlist:
+        findThreeDigitCommas(n)
+
+if __name__ == "__main__":
+    main()
+```
+
 Q:21. How would you write a regex that matches the full name of someone whose last name is Nakamoto? You can assume that the first name that comes before it will always be one word that begins with a capital letter. The regex must match the following:
 
 'Satoshi Nakamoto'
@@ -141,6 +161,27 @@ but not the following:
 'Nakamoto' (which has no first name)
 
 'Satoshi nakamoto' (where Nakamoto is not capitalized)
+
+```python
+import re
+
+def findNakamota(testString):
+    personNakamota = re.compile(r'^[A-Z][a-z]+ Nakamoto$')
+    mo = personNakamota.search(testString)
+    try:
+        print('''A proper "Nakamota" name: ''' + mo.group() + ''' was found in: ''' + testString)
+    except:
+        print('''--------''' + testString + ''' doesn't have a proper "Nakamota" name''')
+
+def main():
+    testlist = ['Satoshi Nakamoto', 'Alice Nakamoto', 'Robocop Nakamoto',
+            'satoshi Nakamoto','Mr. Nakamoto','Nakamoto','Satoshi nakamoto']
+    for n in testlist:
+        findNakamota(n)
+
+if __name__ == "__main__":
+    main()
+```
 
 Q:22. How would you write a regex that matches a sentence where the first word is either Alice, Bob, or Carol; the second word is either eats, pets, or throws; the third word is apples, cats, or baseballs; and the sentence ends with a period? This regex should be case-insensitive. It must match the following:
 
