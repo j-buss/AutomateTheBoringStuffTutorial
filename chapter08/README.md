@@ -9,7 +9,6 @@ In [Chapter ](https://automatetheboringstuff.com/chapter/)
 
 ## Summary Notes
 
-- blab: blab blab blab
 Item|Description
 ----|-----------
 os.path.join('usr','bin')|function to create path for folder/file based on os conventions ('\\' vs. '/')
