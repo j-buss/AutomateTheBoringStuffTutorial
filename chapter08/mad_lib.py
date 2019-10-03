@@ -3,22 +3,46 @@
 # mad_libs.py FILENAME, where FILENAME is a text file that contains a story with placeholders for 
 #     grammatical types; example: VERB, ADJECTIVE, etc.
 import sys
+import re
 
-# TODO: Read the filename for the base story from the commandline
-try:
-    filename = sys.argv[1]
-    storyFile = open(filename)
-    storyText = storyFile.read()
-except:
-    print('Unable to open file')
+def file_input():
+    filename = input('Please enter a filename for the story: ') 
+    print(filename)
+    try:
+        storyFile = open(filename)
+        storyText = storyFile.read()
+        storyFile.close()
+    except:
+        print('unable to open file')
+        sys.exit(1)
 
-# TODO: Default list of Grammar items
-grammar_type_count = {'VERB':,'ADJECTIVE':,'NOUN':,'ADVERB':}
+    return storyText, filename
 
-# TODO: Search the story file for the values: ADJECTIVE, NOUN, ADVERB, VERB
+def mad_libs_replace(text, substring):
+    # Search the story file for the values: ADJECTIVE, NOUN, ADVERB, VERB
+    count = text.count(substring)
+    for i in range(count):
+        replace_string = input("Please enter a " + substring + ": ")
+        text = text.replace(substring, replace_string, 1)
+    return text
 
 
-# TODO: Prompt the user to imput values for the 
+def main():
+    story, filename = file_input()
+    grammar_types = ['VERB','NOUN','ADJECTIVE','ADVERB']
+    for item in grammar_types:
+        story = mad_libs_replace(story, item)
+    
+    print(story)
+    filename_regex = re.compile(r'''
+            (\w+)       # Filename
+            (\.\w{3})      # File Type
+            ''' ,re.VERBOSE)
+    mo = filename_regex.search(filename)
+    new_filename = mo.group(1) + '_output' + mo.group(2)
+    newfile = open(new_filename, 'w')
+    newfile.write(story)
+    newfile.close
 
-# TODO: Print the story
-print(storyFile.read())
+if __name__ == "__main__":
+    main()
