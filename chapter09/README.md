@@ -21,14 +21,28 @@ shutil.rmtree(_path_)|remove the folder at _path_ and all files and folders it c
 send2trash library|small package that sends files to the Trash (or Recycle Bin) natively and on all platforms
 os.walk(_path_)|function to recursively walk the contents of a folder
 zipfile module|tools provided to create, read, write, append and list a ZIP file
+ZipFileObject.extractall(optional _path_)|extract the files into the current working directory; optionally you can add a file path to a location other than current diretory
+ZipFileObject.extract(_filename_)|extract a single file from the ZIP file
+ZipFileObject.close()|close the zip file
+
+
 
 ## Zipfile Example:
 ```python
 import zipfile
 import os
 os.chdir('\tmp')
+#Create some files...
+
+# Create a zip file...
+newZip = zipfile.ZipFile('new.zip', 'w')
+newZip.write('\tmp\*', compress_type=zipfile.ZIP_DEFLATED)
+
+# Now Unzip it
 exampleZip = zipfile.ZipFile('example.zip')
 exampleZip.namelist()
+exampleZip.extractall('\tmp\test_my_zip_extract')
+exampleZip.close()
 ```
 
 ------
