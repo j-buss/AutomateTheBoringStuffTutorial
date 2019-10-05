@@ -44,8 +44,35 @@ exampleZip.namelist()
 exampleZip.extractall('\tmp\test_my_zip_extract')
 exampleZip.close()
 ```
-
 ------
 # Chapter X - Practice Questions
-Q:1. QUESTION STUFF
+
+Q:1. What is the difference between shutil.copy() and shutil.copytree()?
+
+##### shutil.copy() will copy one file; shutil.copytree() will copy an entire folder and every folder and file contained in it
+
+Q:2. What function is used to rename files?
+
+##### the shutil.move(_source_,_destination_) function will move the file at the path _source_ to the _destination_
+
+Q:3. What is the difference between the delete functions in the send2trash and shutil modules?
+
+##### the os.remove(_filepath_) or os.unlink(_filepath_) will remove the file; however the send2trash.send2trash(_filepath_) will remove the file and send it to the trash/recycle bin of the native system
+
+Q:4. ZipFile objects have a close() method just like File objects’ close() method. What ZipFile method is equivalent to File objects’ open() method?
+
+##### The zipfile.ZipFile(_filepath_, _write/read/append flag_) will 'open' the file ready for processing
+
+-----
+
+## Project: Renaming Files with American-Style Dates to European-Style Dates
+
+
+## Project: Backing Up a Folder into a Zip File
+
+## Practice Projects: Selective Copy
+
+## Practice Projects: Deleting Unneeded Files
+
+## Practice Projects: Filling in the Gaps
 
