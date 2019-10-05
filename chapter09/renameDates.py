@@ -7,7 +7,10 @@ import shutil
 
 def prepDirectory(directoryPath):
     directoryAbsPath = os.path.abspath(directoryPath)
-    shutil.rmtree(directoryAbsPath)
+    try:
+        shutil.rmtree(directoryAbsPath)
+    except:
+        pass
     os.mkdir(directoryAbsPath)
     open(os.path.join(directoryAbsPath,'10-01-2019.txt'),'a').close()
     open(os.path.join(directoryAbsPath,'ExtraPrefix10-01-2019ExtraSuffix.txt'),'a').close()
@@ -36,7 +39,7 @@ def renameAmericanDates():
             print('no american date name found here')
 
 def main():
-    directoryName = 'dir_forRenameDates'
+    directoryName = 'TESTDIR_forRenameDates'
     prepDirectory(directoryName)
     #renameAmericanDates(directoryName)
 
