@@ -1,11 +1,5 @@
-# Chapter X - DESCRIPTION
-In [Chapter ](https://automatetheboringstuff.com/chapter/) 
-
-## Accompanying Videos:
-- [Lesson 9 - def Statements, arguments, and the None value](https://www.youtube.com/watch?v=WB4hJJkfhLU)
-- [Lesson 10 - Global Scope and Local Scope](https://www.youtube.com/watch?v=M-CoVBK_bLE)
-- [Lesson 11 - Error Handling](https://www.youtube.com/watch?v=qS0UkqaYmfU)
-- [Lesson 12 - Writing a Guess the Number Game](https://www.youtube.com/watch?v=48WXHT0dfEY)
+# Chapter 8 - Reading and Writing Files
+In [Chapter 8](https://automatetheboringstuff.com/chapter8/) we work with files: Reading, Writing and overall navigation of the folder structure.
 
 ## Summary Notes
 
