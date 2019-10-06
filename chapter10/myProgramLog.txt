@@ -1,0 +1,5 @@
+ 2019-10-06 11:17:57,571 - DEBUG - Some debugging details.
+ 2019-10-06 11:17:57,571 - INFO - The logging module is working.
+ 2019-10-06 11:17:57,571 - WARNING - An error message is about to be logged.
+ 2019-10-06 11:17:57,571 - ERROR - An error has occurred.
+ 2019-10-06 11:17:57,571 - CRITICAL - The program is unable to recover!
