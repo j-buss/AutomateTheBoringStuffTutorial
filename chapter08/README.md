@@ -17,7 +17,7 @@ os.path.basename(_path_)|return the basename of the _path_ argument
 os.path.dirname(_path_)|return the directory name of the _path_ argument
 os.path.split(_path_)|return a tupe of directory name and basename of the _path_ argumenti
 os.path.getsize(_path_)|return size in bytes
-os.path.listdir(_path_)|return list of filename strings
+os.listdir(_path_)|return list of filename strings
 os.path.exists(_path_)|return True if file or folder exists 
 os.path.isfile(_path_)|return True if exists and is a file
 os.path.isdir(_path_)|return True if exists and is a directory
