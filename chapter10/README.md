@@ -39,19 +39,47 @@ for i in range(5):
 # Chapter 10 - Practice Questions
 Q:1. Write an assert statement that triggers an AssertionError if the variable spam is an integer less than 10.
 
+##### assert spam < 10, 'Spam is greater than 10'
+
 Q:2. Write an assert statement that triggers an AssertionError if the variables eggs and bacon contain strings that are the same as each other, even if their cases are different (that is, 'hello' and 'hello' are considered the same, and 'goodbye' and 'GOODbye' are also considered the same).
+
+##### assert eggs.lower() != bacon.lower(), 'Eggs and Bacon are the same...not good'
 
 Q:3. Write an assert statement that always triggers an AssertionError.
 
+##### assert False, 'This assertion is false'
+
 Q:4. What are the two lines that your program must have in order to be able to call logging.debug()?
+
+```python
+import logging
+logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+```
 
 Q:5. What are the two lines that your program must have in order to have logging.debug() send a logging message to a file named programLog.txt?
 
+```python
+import logging
+logging.basicConfig(filename='myProgramLog.txt',level=logging.DEBUG, format=' %(asctime)s - %(levelname) s - %(message)s')
+```
+
 Q:6. What are the five logging levels?
+
+Level|Logging Function|Description
+----|----|----
+DEBUG|logging.debug()|lowest level; small details; usually used when diagnosing problems
+INFO|logging.info()|record information on general events
+WARNING|logging.warning()|indicate potential problem; doesn't prevent program from working
+ERROR|logging.error()|record an error that caused the program to fail to do something
+CRITICAL|logging.critical()|highest level; used to indicate fatal error that has caused or about to cause the program to stop running
 
 Q:7. What line of code can you add to disable all logging messages in your program?
 
+##### logging.disable(logging.DEBUG)
+
 Q:8. Why is using logging messages better than using print() to display the same message?
+
+##### Logging is easier to remove
 
 Q:9. What are the differences between the Step, Over, and Out buttons in the Debug Control window?
 
