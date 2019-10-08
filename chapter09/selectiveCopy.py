@@ -18,17 +18,14 @@ def prepDirectory(sourceDirectory):
     open(os.path.join(sourceDirectory,'subDirectory','File_04.txt'),'a').close()
     open(os.path.join(sourceDirectory,'subDirectory','File_05.jpg'),'a').close()
 
-def selectiveCopy(sourceDirectory, targetDirectory):
+def selectiveCopy(sourceDirectory, targetDirectory, fileExtension):
     sourceDirectory = os.path.abspath(sourceDirectory)
     targetDirectory = os.path.abspath(targetDirectory)
     for foldername, subfolders, filenames in os.walk(sourceDirectory):
         for filename in filenames:
-            print(filename)
-            #newBase = os.path.basename(directoryPath) + '_'
-            #if filename.startswith(newBase) and filename.endswith('.zip'):
-            #    continue
-            #backupZipFile.write(os.path.join(foldername, filename))
-    #backupZipFile.close()
+            extension = os.path.splitext(filename)[1]
+            if extension == fileExtension:
+                print(filename)
 
 def main():
     sourceDirectory = 'TESTDIR_forSelectiveCopySource'
@@ -38,7 +35,7 @@ def main():
     prepDirectory(sourceDirectory)
 
     # Perform the actual zip of the folder 
-    selectiveCopy(sourceDirectory, targetDirectory)
+    selectiveCopy(sourceDirectory, targetDirectory, '.txt')
 
 if __name__ == "__main__":
     main()
