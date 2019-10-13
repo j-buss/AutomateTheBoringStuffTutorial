@@ -10,7 +10,7 @@ import sys
 import os
 import shutil
 
-logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename='myDownloadXkcdLog.txt',level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
 #logging.disable(logging.CRITICAL)
 
 def prepDirectory(directoryPath):
@@ -32,9 +32,10 @@ def downloadImage(folder, imageURL, headers):
     req = requests.get(imageURL, headers)
     req.raise_for_status()
     fileName = os.path.split(imageURL)[1]
-    # directoryAbsPath = os.path.abspath(folder)
-    # filename = os.path.join(directoryAbsPath, filename)
-    logging.debug("Full path: " + filename)
+    directoryAbsPath = os.path.abspath(folder)
+    fileName = os.path.join(directoryAbsPath, fileName)
+    logging.debug("Full path: " + imageURL)
+    logging.debug("Filename: " + fileName)
     with open(fileName, 'wb') as f:
         for chunk in req.iter_content(100000):
             f.write(chunk)
@@ -43,9 +44,9 @@ def downloadImage(folder, imageURL, headers):
 def returnPrevURL(soupObject, baseURL):
     """Return the link to the previous Xkcd comic page"""
     previousLink = soupObject.find("div", {"id":"middleContainer"}).find("a",{"rel":"prev"})['href']
-    previousLink = baseURL + previousLink
-    logging.debug("Found previous link: " + previousLink)
-    return previousLink
+    fullPreviousLink = baseURL + previousLink
+    logging.debug("Found previous link: " + fullPreviousLink)
+    return fullPreviousLink, previousLink
 
 def returnSoup(pageURL, headers):
     req = requests.get(pageURL, headers)
@@ -56,14 +57,14 @@ def returnSoup(pageURL, headers):
 def dailyXkcd(folder, url, headers):
     """Perform the step to find the image url, download it, and return link to previous page"""
     tempSoup = returnSoup(url, headers)
-    imageURL = returnXkcdImageURL(tempSoup)
     try:
+        imageURL = returnXkcdImageURL(tempSoup)
         downloadImage(folder, imageURL, headers)
     except:
-        logging.warning("Couldn't get Image from: " + imageURL)
+        logging.warning("Couldn't get Image from: " + url)
         pass
-    prevURL = returnPrevURL(tempSoup, xkcdBaseURL)
-    return prevURL
+    fullPrevURL, prevURL = returnPrevURL(tempSoup, xkcdBaseURL)
+    return fullPrevURL, prevURL
 
 if __name__ == "__main__":
     xkcdBaseURL = "https://xkcd.com"
@@ -73,13 +74,16 @@ if __name__ == "__main__":
     prepDirectory(imageDirectory)
     
     # Get Xkcd information for current webpage
-    #prevURL = dailyXkcd(imageDirectory, xkcdBaseURL,headers)
-    tempSoup = returnSoup('https://xkcd.com/2211/', headers)
-    imageURL = returnXkcdImageURL(tempSoup)
-    print(imageURL)
-    downloadImage(imageDirectory, imageURL, headers)
+    fullPrevURL, prevURL = dailyXkcd(imageDirectory, xkcdBaseURL,headers)
 
-    #count = 0
-    #while count < 2:
-    #    prevURL = dailyXkcd(imageDirectory, prevURL, headers)
-    #    count += 1
+    count = 0
+    while prevURL:
+        fullPrevURL, prevURL = dailyXkcd(imageDirectory, fullPrevURL, headers)
+        prevURL = prevURL.strip("/")
+        count += 1
+        logging.debug(prevURL)
+        if count % 100 == 0:
+            print("Image count download: " + str(count))
+            print("Latest prevURL: " + str(prevURL))
+        if prevURL == str(1):
+            break
