@@ -1,0 +1,1325 @@
+<!DOCTYPE doctype html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="/images/branding/googleg/1x/googleg_standard_color_128dp.png" itemprop="image"/>
+  <title>
+   python - Google Search
+  </title>
+  <script nonce="ikRUUE4of7LhyUueBIvlOw==">
+   (function(){var a=window.performance;window.start=(new Date).getTime();a:{var b=window;if(a){var c=a.timing;if(c){var d=c.navigationStart,e=c.responseStart;if(e>d&&e<=window.start){window.start=e;b.wsrt=e-d;break a}}a.now&&(b.wsrt=Math.floor(a.now()))}}window.google=window.google||{};google.aft=function(f){f.setAttribute("data-iml",+new Date)};}).call(this);(function(){window.jsarwt=function(){return!1};}).call(this);(function(){var c=[],e=0;window.ping=function(b){-1==b.indexOf("&zx")&&(b+="&zx="+(new Date).getTime());var a=new Image,d=e++;c[d]=a;a.onerror=a.onload=a.onabort=function(){delete c[d]};a.src=b};}).call(this);
+  </script>
+  <style>
+   body{margin:0 auto;max-width:736px;padding:0 8px}a{color:#1967D2;text-decoration:none;tap-highlight-color:rgba(0,0,0,.1)}a:visited{color:#4B11A8}a:hover{text-decoration:underline}img{border:0}html{font-family:Roboto,HelveticaNeue,Arial,sans-serif;font-size:14px;line-height:20px;text-size-adjust:100%;color:#3C4043;word-wrap:break-word;background-color:#fff}.bRsWnc{background-color:#fff;border-top:1px solid #e0e0e0;height:39px;overflow:hidden}.N6RWV{height:51px;overflow-scrolling:touch;overflow-x:auto;overflow-y:hidden}.Uv67qb{box-pack:justify;font-size:12px;line-height:37px;justify-content:space-between;justify-content:space-between}.Uv67qb a,.Uv67qb span{color:#757575;display:block;flex:none;padding:0 16px;text-align:center;text-transform:uppercase;}span.OXXup{border-bottom:2px solid #4285f4;color:#4285f4;font-weight:bold}a.eZt8xd:visited{color:#757575}.FElbsf{border-left:1px solid rgba(0,0,0,.12)}header article{overflow:visible}.Pg70bf{height:39px;display:box;display:flex;display:flex;width:100%}.H0PQec{position:relative;flex:1}.sbc{display:flex;width:100%}.Pg70bf input{margin:2px 4px 2px 8px;}.x{width:26px;color:#757575;font:27px/38px arial, sans-serif;line-height:40px;}#qdClwb{flex:0 0 auto;width:39px;height:39px;border-bottom:0;padding:0;border-top-right-radius:8px;background-color:#3b78e7;border:1px solid #3367d6;background-image:url(data:image/gif;base64,R0lGODdhJAAjAPIHAODr/nCk+MPZ/FmV96zK+/7+/5K5+kqL9iwAAAAAJAAjAEADani63P4wykmbKcQRXDscQAEMXmmeaLQVLCukzyC09AjfeK7v/MAajACLhPMVAgwjsUcEiZa8xgAYrVqv2Kx2iwsIAAABknfBBAKrTE4IcMyot8ur8datqIbQfJdnAfo2WE6BV05wXIiJigkAOw==);}.sc{font-size:;position:absolute;top:39px;left:0;right:0;box-shadow:0px 2px 5px rgba(0,0,0,0.2);z-index:2;background-color:#fff}.sc>div{padding:10px 10px;padding-left:16px;padding-left:14px;border-top:1px solid #DFE1E5}.scs{background-color:#f5f5f5;}.noHIxc{display:block;font-size:16px;padding:0 0 0 8px;flex:1;height:35px;outline:none;border:none;width:100%;-webkit-tap-highlight-color:rgba(0,0,0,0);overflow:hidden;}.sbc input[type=text]{background:none}.sml .cOl4Id{display:none}.l{display:none}.sml header{background:none}.sml .l{display:block;padding:0 8px}.sml .l{letter-spacing:-1px;text-align:center;border-radius:2px 0 0 0;font:22px/36px Futura, Arial, sans-serif;font-smoothing:antialiased}.bz1lBb{background:#fff;border-radius:8px 8px 0 0;box-shadow:0 1px 6px rgba(32, 33, 36, 0.18);margin-top:10px}.KP7LCb{border-radius:0 0 8px 8px;box-shadow:0 2px 3px rgba(32, 33, 36, 0.18);margin-bottom:10px;overflow:hidden}.cOl4Id{letter-spacing:-1px;text-align:center;font:22pt Futura, Arial, sans-serif;padding:10px 0 5px 0;height:37px;font-smoothing:antialiased}.cOl4Id span{display:inline-block}.S591j{height:100%}.V6gwVd{color:#4285F4}.iWkuvd{color:#EA4335}.cDrQ7{color:#fbcc05}.ntlR9{color:#34A853}.tJ3Myc{-webkit-transform:rotate(-20deg);position:relative;left:-1px;display:inline-block}footer{text-align:center;margin-top:18px}footer a,footer a:visited,.smiUbb{color:#5f6368}.ksTU4c{margin:0 13px}#mCljob{margin-top:36px}#mCljob>div{margin:20px}
+  </style>
+ </head>
+ <body jsmodel=" ">
+  <header id="hdr">
+   <script nonce="ikRUUE4of7LhyUueBIvlOw==">
+    (function(){var c=500;(function(){window.screen&&window.screen.width<=c&&window.screen.height<=c&&document.getElementById("hdr").classList.add("sml");}).call(this);})();
+   </script>
+   <div class="cOl4Id">
+    <a href="/?sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QOwgC">
+     <span class="V6gwVd">
+      G
+     </span>
+     <span class="iWkuvd">
+      o
+     </span>
+     <span class="cDrQ7">
+      o
+     </span>
+     <span class="V6gwVd">
+      g
+     </span>
+     <span class="ntlR9">
+      l
+     </span>
+     <span class="iWkuvd tJ3Myc">
+      e
+     </span>
+    </a>
+   </div>
+   <div class="bz1lBb">
+    <form class="Pg70bf" id="sf">
+     <a class="l" href="/?output=search&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QPAgE">
+      <span class="V6gwVd">
+       G
+      </span>
+      <span class="iWkuvd">
+       o
+      </span>
+      <span class="cDrQ7">
+       o
+      </span>
+      <span class="V6gwVd">
+       g
+      </span>
+      <span class="ntlR9">
+       l
+      </span>
+      <span class="iWkuvd tJ3Myc">
+       e
+      </span>
+     </a>
+     <input name="ie" type="hidden" value="ISO-8859-1"/>
+     <div class="H0PQec">
+      <div class="sbc esbc">
+       <input autocapitalize="none" autocomplete="off" class="noHIxc" name="q" spellcheck="false" type="text" value="python"/>
+       <input name="oq" type="hidden"/>
+       <input name="aqs" type="hidden"/>
+       <div class="x">
+        ×
+       </div>
+       <div class="sc">
+       </div>
+      </div>
+     </div>
+     <button id="qdClwb" type="submit">
+     </button>
+    </form>
+   </div>
+   <noscript>
+    <meta content="0;url=/search?q=python&amp;ie=UTF-8&amp;gbv=1&amp;sei=Lo6kXeGmJvG55OUPn7mJ6As" http-equiv="refresh"/>
+    <style>
+     table,div,span,p{display:none}
+    </style>
+    <div style="display:block">
+     Please click
+     <a href="/search?q=python&amp;ie=UTF-8&amp;gbv=1&amp;sei=Lo6kXeGmJvG55OUPn7mJ6As">
+      here
+     </a>
+     if you are not redirected within a few seconds.
+    </div>
+   </noscript>
+  </header>
+  <div id="main">
+   <div>
+    <div class="KP7LCb">
+     <div class="bRsWnc">
+      <div class="N6RWV">
+       <div class="Pg70bf Uv67qb">
+        <span class="OXXup">
+         All
+        </span>
+        <a class="eZt8xd" href="/search?q=python&amp;ie=UTF-8&amp;source=lnms&amp;tbm=isch&amp;sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q_AUICCgB">
+         Images
+        </a>
+        <a class="eZt8xd" href="/search?q=python&amp;ie=UTF-8&amp;source=lnms&amp;tbm=nws&amp;sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q_AUICSgC">
+         News
+        </a>
+        <a class="eZt8xd" href="/search?q=python&amp;ie=UTF-8&amp;source=lnms&amp;tbm=vid&amp;sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q_AUICigD">
+         Videos
+        </a>
+        <a href="https://maps.google.com/maps?q=python&amp;um=1&amp;ie=UTF-8&amp;sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q_AUICygE">
+         Maps
+        </a>
+        <a href="/search?q=python&amp;ie=UTF-8&amp;source=lnms&amp;tbm=shop&amp;sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q_AUIDCgF">
+         Shopping
+        </a>
+        <a href="/search?q=python&amp;ie=UTF-8&amp;source=lnms&amp;tbm=bks&amp;sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q_AUIDSgG">
+         Books
+        </a>
+        <div class="FElbsf">
+         <a href="/advanced_search" id="st-toggle" role="button" style="white-space:nowrap">
+          Search tools
+         </a>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+    <div class="Pg70bf wEsjbd ZINbbc xpd O9g5cc uUPGi" id="st-card" style="display:none">
+     <style>
+      .wEsjbd{background-color:#fff;height:44px;white-space:nowrap}.coPU8c{height:60px;overflow-scrolling:touch;overflow-x:auto;overflow-y:hidden}.Xj2aue{height:44px;overflow:hidden}.RnNGze{margin:11px 16px}.wEsjbd div,.wEsjbd a,.wEsjbd li{outline-width:0;outline:none}
+     </style>
+     <div class="Xj2aue">
+      <div class="coPU8c">
+       <div class="RnNGze">
+        <style>
+         .PA9J5{display:inline-block}.RXaOfd{display:inline-block;height:22px;position:relative;padding-top:0;padding-bottom:0;padding-right:16px;padding-left:0;line-height:22px;cursor:pointer;text-transform:uppercase;font-size:12px;color:#757575}.sa1toc{display:none;position:absolute;background:#fff;border:1px solid #d6d6d6;box-shadow:0 2px 4px rgba(0,0,0,0.3);margin:0;white-space:nowrap;z-index:103;line-height:17px;padding-top:5px;padding-bottom:5px;padding-left:0px}.PA9J5:hover .sa1toc{display:block}.mGSy8d a:active,.RXaOfd:active{color:#4285f4}
+        </style>
+        <div class="PA9J5">
+         <div class="RXaOfd" role="button" tabindex="0">
+          <style>
+           .TWMOUc{display:inline-block;padding-right:14px;white-space:nowrap}.vQYuGf{font-weight:bold}.OmTIzf{border-color:#909090 transparent;border-style:solid;border-width:4px 4px 0 4px;width:0;height:0;margin-left:-10px;top:50%;margin-top:-2px;position:absolute}.RXaOfd:active .OmTIzf{border-color:#4285f4 transparent}
+          </style>
+          <div class="TWMOUc">
+           Any time
+          </div>
+          <span class="OmTIzf">
+          </span>
+         </div>
+         <ul class="sa1toc ozatM">
+          <style>
+           .ozatM{font-size:12px;text-transform:uppercase}.ozatM .yNFsl,.ozatM li{list-style-type:none;list-style-position:outside;list-style-image:none}.yNFsl.SkUj4c,.yNFsl a{color:rgba(0,0,0,0.54);text-decoration:none;padding:6px 44px 6px 14px;line-height:17px;display:block}.SkUj4c{background-image:url(//ssl.gstatic.com/ui/v1/menu/checkmark2.png);background-position:right center;background-repeat:no-repeat}.SkUj4c:active{background-color:#f5f5f5}
+          </style>
+          <li class="yNFsl SkUj4c">
+           Any time
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=python&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:h&amp;sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QpwUIDw">
+            Past hour
+           </a>
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=python&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:d&amp;sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QpwUIEA">
+            Past 24 hours
+           </a>
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=python&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:w&amp;sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QpwUIEQ">
+            Past week
+           </a>
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=python&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:m&amp;sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QpwUIEg">
+            Past month
+           </a>
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=python&amp;ie=UTF-8&amp;source=lnt&amp;tbs=qdr:y&amp;sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QpwUIEw">
+            Past year
+           </a>
+          </li>
+         </ul>
+        </div>
+        <div class="PA9J5">
+         <div class="RXaOfd" role="button" tabindex="0">
+          <div class="TWMOUc">
+           All results
+          </div>
+          <span class="OmTIzf">
+          </span>
+         </div>
+         <ul class="sa1toc ozatM">
+          <li class="yNFsl SkUj4c">
+           All results
+          </li>
+          <li class="yNFsl">
+           <a href="/search?q=python&amp;ie=UTF-8&amp;source=lnt&amp;tbs=li:1&amp;sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QpwUIFQ">
+            Verbatim
+           </a>
+          </li>
+         </ul>
+        </div>
+       </div>
+      </div>
+     </div>
+     <script nonce="ikRUUE4of7LhyUueBIvlOw==">
+      (function(){var a=document.getElementById("st-toggle"),b=document.getElementById("st-card");a&&b&&a.addEventListener("click",function(c){b.style.display=b.style.display?"":"none";c.preventDefault()},!1);}).call(this);
+     </script>
+    </div>
+   </div>
+   <style>
+    .ZINbbc{background-color:#fff;margin-bottom:10px;box-shadow:0 1px 6px rgba(32, 33, 36, 0.28);border-radius:8px}.uUPGi{font-size:14px;line-height:20px;}.O9g5cc>*:first-child{border-top-left-radius:8px;border-top-right-radius:8px}.O9g5cc>*:last-child{border-bottom-left-radius:8px;border-bottom-right-radius:8px}.rl7ilb{display:block;clear:both}.kCrYT{padding:12px 16px 12px}a.fdYsqf{color:#4B11A8}.BNeawe{white-space:pre-line;word-wrap:break-word}.vvjwJb{color:#1967D2;font-size:16px;line-height:20px}.vvjwJb a:visited{color:#4B11A8}.vvjwJb.HrGdeb{color:rgba(255,255,255,1)}.vvjwJb.HrGdeb a:visited{color:rgba(255,255,255,.7)}.UPmit{font-size:14px;line-height:20px}.UPmit.HrGdeb{color:rgba(255,255,255,.7)}.UPmit.AP7Wnd{color:rgba(0,102,33,1)}.x54gtf{height:1px;background-color:#dfe1e5;margin:0 16px}.Ap5OSd{padding-bottom:12px}.s3v9rd{font-size:14px;line-height:20px}.s3v9rd.HrGdeb{color:rgba(255,255,255,1)}.s3v9rd.AP7Wnd{color:#202124}.mSx1Ee{padding-left:48px;margin:0}.v9i61e{padding-bottom:8px}.UykT9d{display:block;float:right;padding-left:16px}.nYT7Qb{clear:both}.R0jTRc{vertical-align:middle}.deIvCb{font-size:16px;line-height:20px;font-weight:400}.deIvCb.HrGdeb{color:rgba(255,255,255,1)}.deIvCb.AP7Wnd{color:#202124}.tAd8D{font-size:14px;line-height:20px}.tAd8D.HrGdeb{color:rgba(255,255,255,.7)}.tAd8D.AP7Wnd{color:#70757A}.xpc .hwc,.xpx .hwx{display:none}.skVgpb{display:table;table-layout:fixed;width:100%}.VGHMXd{display:table-cell;vertical-align:middle;height:52px;text-align:center}.LpaDrb{margin:0 auto 8px;display:block}.vbShOe{padding-top:0}.XLloXe{color:#1967D2;font-size:14px;line-height:20px}.XLloXe a:visited{color:#4B11A8}.XLloXe.HrGdeb{color:rgba(255,255,255,1)}.XLloXe.HrGdeb a:visited{color:rgba(255,255,255,.7)}.AVsepf{padding-bottom:8px}.AVsepf.u2x1Od{padding-bottom:0}.Ru8idb{margin-top:-16px}.punez{font-weight:700;letter-spacing:0.75px;text-transform:uppercase}.wyrwXc{font-size:12px;line-height:16px}.wyrwXc.HrGdeb{color:rgba(255,255,255,1)}.wyrwXc.AP7Wnd{color:#202124}.Xdlr0d{overflow-x:auto;-webkit-overflow-scrolling:touch;margin:0 -8px;padding:16px 0 16px 24px;padding-top:2px;margin-top:-2px;transform:translate3d(0,0,0)}.idg8be{display:table;border-collapse:separate;border-spacing:8px 0;margin:0 -8px;padding-right:16px}.BVG0Nb{display:table-cell;vertical-align:top;background-color:#fff;border-radius:8px;box-shadow:0 1px 6px rgba(32, 33, 36, 0.28);overflow:hidden}.EYOsld{display:inline-block;position:relative}.BFi9Zb{overflow:hidden;position:relative}.S7Jdze{align-items:center;display:flex;flex-direction:column;justify-content:space-around}hr{border:0;border-bottom:1px solid #dfe1e5;margin:0;}.BUybKe,.HsnFBf{margin-left:16px}.BUybKe,.oM2GA{margin-right:16px}.XO7rhc{margin:0 -16px}.iIWm4b{box-sizing:border-box;min-height:48px}.fLtXsc{padding:14px;text-align:center}.Lym8W{width:14px;height:20px;position:relative;margin:0 auto}.AdfXrb{margin-left:-14px;vertical-align:middle;display:inline-block}.Lym8W div{position:absolute;border-left:7px solid transparent;border-right:7px solid transparent;width:0;height:0;left:0}.IyYaEd{top:7px;border-top:7px solid #757575}.ECUHQe{top:4px;border-top:7px solid #fff}.AeQQub{bottom:7px;border-bottom:7px solid #757575}.YCU7eb{bottom:4px;border-bottom:7px solid #fff}.r0bn4c.tr0dw{color:rgba(255,255,255,.7)}.r0bn4c.rQMQod{color:#70757A}.ZTv9Bb{display:block}.FCUp0c{font-weight:bold}.X7NTVe{display:table;width:100%;padding-right:16px;box-sizing:border-box}.tHmfQe{display:table-cell;padding:12px 0 12px 16px}.UHtrk{width:72px}.HBTM6d{width:30px}.XS7yGd{display:table-cell;text-align:center;vertical-align:middle;padding:12px 0 12px 8px}.am3QBf{display:table;vertical-align:top}.Icx6Cd{margin:0 auto 8px}.mAdjQc{text-align:right}.uEec3{font-size:12px;line-height:16px}.uEec3.HrGdeb{color:rgba(255,255,255,.7)}.uEec3.AP7Wnd{color:#70757A}.rLshyf,.BmP5tf{padding-top:12px;padding-bottom:12px}.w1C3Le,.BmP5tf,.G5NbBd{padding-left:16px;padding-right:16px;}.G5NbBd{padding-bottom:12px}.nMymef{display:flex}.G5eFlf{flex:1;display:block}.nMymef span{text-align:center}
+   </style>
+   <div>
+    <!--SW_C_X-->
+   </div>
+   <div>
+    <div class="ZINbbc xpd O9g5cc uUPGi">
+     <div class="kCrYT">
+      <a href="/url?q=https://www.python.org/&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QFjAAegQIBxAB&amp;usg=AOvVaw3NL0AFPOO8ZeKc2TT5qz_7">
+       <div class="BNeawe vvjwJb AP7Wnd">
+        Welcome to Python.org
+       </div>
+       <div class="BNeawe UPmit AP7Wnd">
+        https://www.python.org
+       </div>
+      </a>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           The official home of the Python Programming Language.
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="ZINbbc xpd O9g5cc uUPGi">
+     <div class="kCrYT">
+      <a href="/url?q=https://www.python.org/downloads/&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QFjABegQICBAB&amp;usg=AOvVaw1taXfNp0DvvSjgEmolHMIW">
+       <div class="BNeawe vvjwJb AP7Wnd">
+        Download Python | Python.org
+       </div>
+       <div class="BNeawe UPmit AP7Wnd">
+        https://www.python.org › downloads
+       </div>
+      </a>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           Download the latest version of Python. Download Python 3.7.4. Looking for ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="ZINbbc xpd O9g5cc uUPGi">
+     <div class="kCrYT">
+      <a href="/url?q=https://www.python.org/community/logos/&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QwW4wAnoECAsQAg&amp;usg=AOvVaw1YnGEzoOn5Bp_UG2bpdFP2">
+       <img alt="" class="UykT9d" data-deferred="1" id="dimg_1" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:72px;max-height:72px"/>
+      </a>
+      <span>
+       <div class="BNeawe deIvCb AP7Wnd">
+        Python
+       </div>
+      </span>
+      <span>
+       <div class="BNeawe tAd8D AP7Wnd">
+        High-level programming language
+       </div>
+      </span>
+      <div class="nYT7Qb">
+      </div>
+     </div>
+     <div class="xpc">
+      <div class="x54gtf">
+      </div>
+      <div class="kCrYT">
+       <div>
+        <div class="BNeawe s3v9rd AP7Wnd">
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design philosophy emphasizes code readability with its notable use of significant whitespace.
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Python_(programming_language)&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QmhMwBHoECAsQBw&amp;usg=AOvVaw17I_-YE9OnTbNEJDcyOYVf">
+             <span class="XLloXe AP7Wnd">
+              Wikipedia
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="vbShOe kCrYT">
+       <div class="AVsepf">
+        <div class="BNeawe s3v9rd AP7Wnd">
+         <span>
+          <span class="BNeawe s3v9rd AP7Wnd">
+           Typing discipline
+          </span>
+         </span>
+         :
+         <span>
+          <span class="BNeawe tAd8D AP7Wnd">
+           <span class="BNeawe">
+            <a href="/search?ie=UTF-8&amp;q=Duck&amp;stick=H4sIAAAAAAAAAOPgE-LQz9U3MK0yjFfiBLGMLIos4rWki4ut9MtTk9ISk0uKrUoqC1LjUzKLkzMLcjLzFrGyuJQmZwMAwi9X8jsAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QmxMwBnoECAsQCQ">
+             <span class="XLloXe AP7Wnd">
+              Duck
+             </span>
+            </a>
+           </span>
+           ,
+           <span class="BNeawe">
+            <a href="/search?ie=UTF-8&amp;q=dynamic&amp;stick=H4sIAAAAAAAAAOPgE-LQz9U3MK0yjFfi1k_XNzQCAuO0HC3p4mIr_fLUpLTE5JJiq5LKgtT4lMzi5MyCnMy8RazsKZV5ibmZyQDImWrbQAAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QmxMwBnoECAsQCg">
+             <span class="XLloXe AP7Wnd">
+              dynamic
+             </span>
+            </a>
+           </span>
+           ,
+           <span class="BNeawe">
+            <a href="/search?ie=UTF-8&amp;q=gradual&amp;stick=H4sIAAAAAAAAAOPgE-LQz9U3MK0yjFfiArHKjY2qigy0pIuLrfTLU5PSEpNLiq1KKgtS41Myi5MzC3Iy8xaxsqcXJaaUJuYAAGHYcbM_AAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QmxMwBnoECAsQCw">
+             <span class="XLloXe AP7Wnd">
+              gradual
+             </span>
+            </a>
+           </span>
+           (since 3.5)
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="AVsepf">
+        <div class="BNeawe s3v9rd AP7Wnd">
+         <span>
+          <span class="BNeawe s3v9rd AP7Wnd">
+           Preview release
+          </span>
+         </span>
+         :
+         <span>
+          <span class="BNeawe tAd8D AP7Wnd">
+           Python 3.8.0b4 /
+           <span class="BNeawe">
+            <a href="/search?ie=UTF-8&amp;q=30+August+2019&amp;stick=H4sIAAAAAAAAAOPgE-LQz9U3MK0yjFcS0C_RNzLPTi-zqLJINk8qK9KSLi620i9PTUpLTC4ptiooSi3LTC2PL0rNSU0sXsTKZ2yg4FiaXlpcomBkYGgJADTFeWZMAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QmxMwB3oECAsQDQ">
+             <span class="XLloXe AP7Wnd">
+              30 August 2019
+             </span>
+            </a>
+           </span>
+           ; 32 days ago
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="AVsepf">
+        <div class="BNeawe s3v9rd AP7Wnd">
+         <span>
+          <span class="BNeawe s3v9rd AP7Wnd">
+           Designed by
+          </span>
+         </span>
+         :
+         <span>
+          <span class="BNeawe tAd8D AP7Wnd">
+           <span class="BNeawe">
+            <a href="/search?ie=UTF-8&amp;q=Guido+van+Rossum&amp;stick=H4sIAAAAAAAAAOPgE-LQz9U3MK0yjFfiBLEMMwxMk7UMMsqt9JPzc3JSk0sy8_P0C4ry04sSc3Mz89LjcxLz0ksT01OLrVJSizPT81JTFJIqF7EKuJdmpuQrlCXmKQTlFxeX5gIAXhtP9lwAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QmxMwCHoECAsQDw">
+             <span class="XLloXe AP7Wnd">
+              Guido van Rossum
+             </span>
+            </a>
+           </span>
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="AVsepf">
+        <div class="BNeawe s3v9rd AP7Wnd">
+         <span>
+          <span class="BNeawe s3v9rd AP7Wnd">
+           Stable release
+          </span>
+         </span>
+         :
+         <span>
+          <span class="BNeawe tAd8D AP7Wnd">
+           3.7.4 /
+           <span class="BNeawe">
+            <a href="/search?ie=UTF-8&amp;q=8+July+2019&amp;stick=H4sIAAAAAAAAAOPgE-LQz9U3MK0yjFcS0C_RNzIpSso2NMursKgwMdaSLC620i9PTUpLTC4ptiouSUzKiS9KzUlNLF7Eym2h4FWaU6lgZGBoCQDTMfLIRwAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QmxMwCXoECAsQEQ">
+             <span class="XLloXe AP7Wnd">
+              8 July 2019
+             </span>
+            </a>
+           </span>
+           ; 2 months ago;
+           <span class="BNeawe">
+            <a href="/search?ie=UTF-8&amp;q=2.7.16&amp;stick=H4sIAAAAAAAAAOPgE-LQz9U3MK0yjFcS0C_RNzKLzymrsqioNMytStKSLC620i9PTUpLTC4ptiouSUzKiS9KzUlNLF7EymakZ65naAYAuLPUBUIAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QmxMwCXoECAsQEg">
+             <span class="XLloXe AP7Wnd">
+              2.7.16
+             </span>
+            </a>
+           </span>
+           /
+           <span class="BNeawe">
+            <a href="/search?ie=UTF-8&amp;q=4+March+2019&amp;stick=H4sIAAAAAAAAAOPgE-LQz9U3MK0yjFcS0C_RNzIxLzcwMEsuMsupKNSSLC620i9PTUpLTC4ptiouSUzKiS9KzUlNLF7EymOi4JtYlJyhYGRgaAkAp24TGEgAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QmxMwCXoECAsQEw">
+             <span class="XLloXe AP7Wnd">
+              4 March 2019
+             </span>
+            </a>
+           </span>
+           ; 6 months ago
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="AVsepf hwc">
+        <div class="BNeawe s3v9rd AP7Wnd">
+         <span>
+          <span class="BNeawe s3v9rd AP7Wnd">
+           Filename extensions
+          </span>
+         </span>
+         :
+         <span>
+          <span class="BNeawe tAd8D AP7Wnd">
+           .py,.pyc,.pyd,.pyo (prior to 3.5),.pyw,.pyz (since 3.5)
+          </span>
+         </span>
+        </div>
+       </div>
+       <div class="AVsepf u2x1Od hwc">
+        <div class="BNeawe s3v9rd AP7Wnd">
+         <span>
+          <span class="BNeawe s3v9rd AP7Wnd">
+           Paradigm
+          </span>
+         </span>
+         :
+         <span>
+          <span class="BNeawe tAd8D AP7Wnd">
+           Multi-paradigm: functional, imperative,
+           <span class="BNeawe">
+            <a href="/search?ie=UTF-8&amp;q=object-oriented&amp;stick=H4sIAAAAAAAAAOPgE-LQz9U3MK0yjFeCsAqKsrREi4ut9MtTk9ISk0uKrQoSixJTMtNzF7Hy5ydlpSaX6OYXZabmlaSmAAC5CJ1XPwAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QmxMwC3oECAsQFg">
+             <span class="XLloXe AP7Wnd">
+              object-oriented
+             </span>
+            </a>
+           </span>
+           ,
+           <span class="BNeawe">
+            <a href="/search?ie=UTF-8&amp;q=reflective&amp;stick=H4sIAAAAAAAAAOPgE-LQz9U3MK0yjFfiBLEMSwrNC7REi4ut9MtTk9ISk0uKrQoSixJTMtNzF7FyFaWm5aQml2SWpQIAGvYSJDsAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QmxMwC3oECAsQFw">
+             <span class="XLloXe AP7Wnd">
+              reflective
+             </span>
+            </a>
+           </span>
+          </span>
+         </span>
+        </div>
+       </div>
+      </div>
+      <div class="x54gtf">
+      </div>
+      <div>
+       <div class="kCrYT">
+        <span class="punez">
+         <div class="BNeawe wyrwXc AP7Wnd">
+          Python compilers
+         </div>
+        </span>
+       </div>
+       <div>
+        <div>
+         <div class="Xdlr0d">
+          <div class="idg8be">
+           <a class="BVG0Nb" href="/search?ie=UTF-8&amp;q=Numba&amp;stick=H4sIAAAAAAAAAONgFuLQz9U3MK0yjFfiArGqUrItyky0RLKTrfST83Nz8_OsUvLL88oTi1KKF7Gy-pXmJiUCAE2hb0w2AAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0I4BMAx6BAgLEBo">
+            <div>
+             <div style="width:112px">
+              <div class="S7Jdze" style="width:112px;height:112px">
+               <img alt="" class="EYOsld" data-deferred="1" id="dimg_3" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:112px;max-height:112px"/>
+              </div>
+              <div class="RWuggc kCrYT">
+               <div>
+                <div class="BNeawe s3v9rd AP7Wnd">
+                 Numba
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </a>
+           <a class="BVG0Nb" href="/search?ie=UTF-8&amp;q=Pyjs&amp;stick=H4sIAAAAAAAAAONgFuLQz9U3MK0yjFfiArFMKs2TLMy1RLKTrfST83Nz8_OsUvLL88oTi1KKF7GyBFRmFQMA2WzTMDUAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0I4BMAx6BAgLEBw">
+            <div>
+             <div style="width:112px">
+              <div class="S7Jdze" style="width:112px;height:112px">
+               <img alt="" class="EYOsld" data-deferred="1" id="dimg_5" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:112px;max-height:112px"/>
+              </div>
+              <div class="RWuggc kCrYT">
+               <div>
+                <div class="BNeawe s3v9rd AP7Wnd">
+                 Pyjs
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </a>
+           <a class="BVG0Nb" href="/search?ie=UTF-8&amp;q=Travis+CI&amp;stick=H4sIAAAAAAAAAONgFuLQz9U3MK0yjFfiArGyystzCwq0RLKTrfST83Nz8_OsUvLL88oTi1KKF7FyhhQllmUWKzh7AgBgYOjpOgAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0I4BMAx6BAgLEB4">
+            <div>
+             <div style="width:112px">
+              <div class="S7Jdze" style="width:112px;height:112px">
+               <img alt="" class="EYOsld" data-deferred="1" id="dimg_7" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:112px;max-height:112px"/>
+              </div>
+              <div class="RWuggc kCrYT">
+               <div>
+                <div class="BNeawe s3v9rd AP7Wnd">
+                 Travis CI
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </a>
+           <a class="BVG0Nb" href="/search?ie=UTF-8&amp;q=MinGW&amp;stick=H4sIAAAAAAAAAONgFuLQz9U3MK0yjFfiBLEM47ON0rVEspOt9JPzc3Pz86xS8svzyhOLUooXsbL6Zua5hwMAdA2erDUAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0I4BMAx6BAgLECA">
+            <div>
+             <div style="width:112px">
+              <div class="S7Jdze" style="width:112px;height:112px">
+               <img alt="" class="EYOsld" data-deferred="1" id="dimg_9" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:112px;max-height:112px"/>
+              </div>
+              <div class="RWuggc kCrYT">
+               <div>
+                <div class="BNeawe s3v9rd AP7Wnd">
+                 MinGW
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </a>
+           <a class="BVG0Nb" href="/search?ie=UTF-8&amp;q=Babel+(compiler)&amp;stick=H4sIAAAAAAAAAONgFuLQz9U3MK0yjFfi1U_XNzRMz8hLy6tMq9ASyU620k_Oz83Nz7NKyS_PK08sSilexCrglJiUmqOgAZQpyMxJLdIEAL-0n6VEAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0I4BMAx6BAgLECI">
+            <div>
+             <div style="width:112px">
+              <div class="S7Jdze" style="width:112px;height:112px">
+               <img alt="" class="EYOsld" data-deferred="1" id="dimg_11" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:112px;max-height:112px"/>
+              </div>
+              <div class="RWuggc kCrYT">
+               <div>
+                <div class="BNeawe s3v9rd AP7Wnd">
+                 Babel
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </a>
+           <a class="BVG0Nb" href="/search?ie=UTF-8&amp;q=Clang&amp;stick=H4sIAAAAAAAAAONgFuLQz9U3MK0yjFfiArGMyo3jkyq1RLKTrfST83Nz8_OsUvLL88oTi1KKF7GyOuck5qUDAE5gOQY2AAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0I4BMAx6BAgLECQ">
+            <div>
+             <div style="width:112px">
+              <div class="S7Jdze" style="width:112px;height:112px">
+               <img alt="" class="EYOsld" data-deferred="1" id="dimg_13" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:112px;max-height:112px"/>
+              </div>
+              <div class="RWuggc kCrYT">
+               <div>
+                <div class="BNeawe s3v9rd AP7Wnd">
+                 Clang
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="hwc">
+       <div class="kCrYT">
+        <span class="punez">
+         <div class="BNeawe wyrwXc AP7Wnd">
+          People also search for
+         </div>
+        </span>
+       </div>
+       <div>
+        <div>
+         <div class="Xdlr0d">
+          <div class="idg8be">
+           <a class="BVG0Nb" href="/search?ie=UTF-8&amp;q=Java&amp;stick=H4sIAAAAAAAAAONgFuLQz9U3MK0yjFfiArHMi5Oy05K0hLOTrfST83Nz8_OsijNTUssTK4sXsbJ4JZYlAgB_0SeKNAAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0I4BMA16BAgLECc">
+            <div>
+             <div style="width:112px">
+              <div class="S7Jdze" style="width:112px;height:112px">
+               <img alt="" class="EYOsld" data-ll="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQyYq2DIJOT1ygeDIOdrUrQXBwbWrePSsLk9DH8x2zrNZbIIVUatWb2n5FUAFRQ1wbOZ68MA" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:112px;max-height:112px"/>
+              </div>
+              <div class="RWuggc kCrYT">
+               <div>
+                <div class="BNeawe s3v9rd AP7Wnd">
+                 Java
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </a>
+           <a class="BVG0Nb" href="/search?ie=UTF-8&amp;q=C%2B%2B&amp;stick=H4sIAAAAAAAAAONgFuLQz9U3MK0yjFcCs7LSC9O1hLOTrfST83Nz8_OsijNTUssTK4sXsTI7a2sDAIk31Y0xAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0I4BMA16BAgLECk">
+            <div>
+             <div style="width:112px">
+              <div class="S7Jdze" style="width:112px;height:112px">
+               <img alt="" class="EYOsld" data-ll="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2bznOX6oiVAw-ZUHDRFRrje-Rw8qeh3PiQKmnjMZw2Lj-kjTQJWbX86Y2VypTktHpllB8Eg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:112px;max-height:112px"/>
+              </div>
+              <div class="RWuggc kCrYT">
+               <div>
+                <div class="BNeawe s3v9rd AP7Wnd">
+                 C++
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </a>
+           <a class="BVG0Nb" href="/search?ie=UTF-8&amp;q=JavaScript&amp;stick=H4sIAAAAAAAAAONgFuLQz9U3MK0yjFcCs4wKLM21hLOTrfST83Nz8_OsijNTUssTK4sXsXJ5JZYlBicXZRaUAACuW_JFOAAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0I4BMA16BAgLECs">
+            <div>
+             <div style="width:112px">
+              <div class="S7Jdze" style="width:112px;height:112px">
+               <img alt="" class="EYOsld" data-ll="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZZiYgX8wo-EkP5zYPl1bnG38SsMEU2QdqMe4faeyTk75Nn4dX1yLnV-gne-NtSgSf-SLbVQ" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:112px;max-height:112px"/>
+              </div>
+              <div class="RWuggc kCrYT">
+               <div>
+                <div class="BNeawe s3v9rd AP7Wnd">
+                 JavaScript
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </a>
+           <a class="BVG0Nb" href="/search?ie=UTF-8&amp;q=R+(programming+language)&amp;stick=H4sIAAAAAAAAAONgFuLQz9U3MK0yjFfiBLGMDI2ycrWEs5Ot9JPzc3Pz86yKM1NSyxMrixexSgQpaBQU5acXJebmZualK-Qk5qWXJqanagIA_XSCZkcAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0I4BMA16BAgLEC0">
+            <div>
+             <div style="width:112px">
+              <div class="S7Jdze" style="width:112px;height:112px">
+               <img alt="" class="EYOsld" data-ll="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwHwxMLIKRa1byg-H_da8c_qsfT0avZfEEnODbgPfY0fDrLw4gBxVWcIcYqMT3WndgJClbvg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:112px;max-height:112px"/>
+              </div>
+              <div class="RWuggc kCrYT">
+               <div>
+                <div class="BNeawe s3v9rd AP7Wnd">
+                 R
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </a>
+           <a class="BVG0Nb" href="/search?ie=UTF-8&amp;q=PHP&amp;stick=H4sIAAAAAAAAAONgFuLQz9U3MK0yjFcCs8wMssu0hLOTrfST83Nz8_OsijNTUssTK4sXsTIHeAQAAD9fip4xAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0I4BMA16BAgLEC8">
+            <div>
+             <div style="width:112px">
+              <div class="S7Jdze" style="width:112px;height:112px">
+               <img alt="" class="EYOsld" data-ll="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiQJ2DHd4RCGAGD7rt4BS67r0tcbT_FIpFdL6vOAHAhOestCWzgoFe9Pb3f3IKOiSi_khnOg" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:112px;max-height:112px"/>
+              </div>
+              <div class="RWuggc kCrYT">
+               <div>
+                <div class="BNeawe s3v9rd AP7Wnd">
+                 PHP
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </a>
+           <a class="BVG0Nb" href="/search?ie=UTF-8&amp;q=SQL&amp;stick=H4sIAAAAAAAAAONgFuLQz9U3MK0yjFcCs8xNi0u0hLOTrfST83Nz8_OsijNTUssTK4sXsTIHB_oAAFUhtvsxAAAA&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0I4BMA16BAgLEDE">
+            <div>
+             <div style="width:112px">
+              <div class="S7Jdze" style="width:112px;height:112px">
+               <img alt="" class="EYOsld" data-ll="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0ryFEnIIgptcZCR3q2d4vnhq_3KZuhLQEIX_yury3DYE2ybXO8JHiEZ73swwcdPt9ADzn9Q" onload="typeof google==='object'&amp;&amp;google.aft&amp;&amp;google.aft(this)" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///////yH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" style="max-width:112px;max-height:112px"/>
+              </div>
+              <div class="RWuggc kCrYT">
+               <div>
+                <div class="BNeawe s3v9rd AP7Wnd">
+                 SQL
+                </div>
+               </div>
+              </div>
+             </div>
+            </div>
+           </a>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+      <hr/>
+      <div class="duf-h">
+       <div class="fLtXsc iIWm4b" onclick="xp(this)">
+        <div class="Lym8W">
+         <div class="AeQQub hwc">
+         </div>
+         <div class="YCU7eb hwc">
+         </div>
+         <div class="IyYaEd hwx">
+         </div>
+         <div class="ECUHQe hwx">
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="ZINbbc xpd O9g5cc uUPGi">
+     <div class="kCrYT">
+      <a href="/url?q=https://www.python.org/about/gettingstarted/&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QFjAOegQIBhAB&amp;usg=AOvVaw1zyDj0MYEMkjPC-qrsOzC8">
+       <div class="BNeawe vvjwJb AP7Wnd">
+        Python For Beginners | Python.org
+       </div>
+       <div class="BNeawe UPmit AP7Wnd">
+        https://www.python.org › about › gettingstarted
+       </div>
+      </a>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           Python For Beginners. Welcome! Are you completely new to programming?
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="ZINbbc xpd O9g5cc uUPGi">
+     <div class="kCrYT">
+      <a href="/url?q=https://www.w3schools.com/python/python_intro.asp&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QFjAPegQICRAB&amp;usg=AOvVaw02IryvsmQjHVbHSpsYDgNF">
+       <div class="BNeawe vvjwJb AP7Wnd">
+        Introduction to Python - W3Schools
+       </div>
+       <div class="BNeawe UPmit AP7Wnd">
+        https://www.w3schools.com › python › python_intro
+       </div>
+      </a>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           What is Python? Python is a popular programming language. It was created by Guido van Rossum, and released in 1991. It is used for: web development ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="ZINbbc xpd O9g5cc uUPGi">
+     <div class="kCrYT">
+      <a href="/url?q=https://en.wikipedia.org/wiki/Python_(programming_language)&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QFjAQegQIChAB&amp;usg=AOvVaw3Tpm5cnQgfDoSKyBNwdRhc">
+       <div class="BNeawe vvjwJb AP7Wnd">
+        Python (programming language) - Wikipedia
+       </div>
+       <div class="BNeawe UPmit AP7Wnd">
+        https://en.wikipedia.org › wiki › Python_(programming_language)
+       </div>
+      </a>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           Python is an interpreted, high-level, general-purpose programming language. Created by Guido van Rossum and first released in 1991, Python's design ...
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Python_(programming_language)%23History&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0gIwEHoECAoQAg&amp;usg=AOvVaw2Y6aCrrdHXUMAIcSC9jvrp">
+             <span class="XLloXe AP7Wnd">
+              History
+             </span>
+            </a>
+           </span>
+           ·
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Python_(programming_language)%23Features_and_philosophy&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0gIwEHoECAoQAw&amp;usg=AOvVaw0_ofaow_xZAGYqRzrY8ZkN">
+             <span class="XLloXe AP7Wnd">
+              Features and philosophy
+             </span>
+            </a>
+           </span>
+           ·
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Python_(programming_language)%23Syntax_and_semantics&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0gIwEHoECAoQBA&amp;usg=AOvVaw3DJogWKjDe3iUZNndJ9H0E">
+             <span class="XLloXe AP7Wnd">
+              Syntax and semantics
+             </span>
+            </a>
+           </span>
+           ·
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Python_(programming_language)%23Python_programming_examples&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q0gIwEHoECAoQBQ&amp;usg=AOvVaw2AOwNnCHHxMa6AAW0hQxGa">
+             <span class="XLloXe AP7Wnd">
+              Python programming ...
+             </span>
+            </a>
+           </span>
+           Developer:
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Python_Software_Foundation&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Qs2YwEHoECAoQCA&amp;usg=AOvVaw2ZTBe58UVNP82XFBLfxD3q">
+             <span class="XLloXe AP7Wnd">
+              Python Software Foundation
+             </span>
+            </a>
+           </span>
+           Designed by:
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Guido_van_Rossum&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Qs2YwEHoECAoQCg&amp;usg=AOvVaw1vtaELcm5LI3_uK3RRsa9Q">
+             <span class="XLloXe AP7Wnd">
+              Guido van Rossum
+             </span>
+            </a>
+           </span>
+           Typing discipline:
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Duck_typing&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Qs2YwEHoECAoQDA&amp;usg=AOvVaw3nCoZyHQxB7_Pb6tz9r1rO">
+             <span class="XLloXe AP7Wnd">
+              Duck
+             </span>
+            </a>
+           </span>
+           <span class="r0bn4c rQMQod">
+            ,
+           </span>
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Dynamic_typing&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Qs2YwEHoECAoQDQ&amp;usg=AOvVaw2PW4ou34ZnMmHmTXYPt36f">
+             <span class="XLloXe AP7Wnd">
+              dynamic
+             </span>
+            </a>
+           </span>
+           <span class="r0bn4c rQMQod">
+            ,
+           </span>
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Gradual_typing&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Qs2YwEHoECAoQDg&amp;usg=AOvVaw0cLJh0qPr1doxrKVsqbWhR">
+             <span class="XLloXe AP7Wnd">
+              gradual
+             </span>
+            </a>
+           </span>
+           <span class="r0bn4c rQMQod">
+            (since 3.5)
+           </span>
+           Paradigm:
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Multi-paradigm_programming_language&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Qs2YwEHoECAoQEA&amp;usg=AOvVaw07Q71q8M8VL-pgO7kZQRSp">
+             <span class="XLloXe AP7Wnd">
+              Multi-paradigm
+             </span>
+            </a>
+           </span>
+           <span class="r0bn4c rQMQod">
+            :
+           </span>
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Functional_programming&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Qs2YwEHoECAoQEQ&amp;usg=AOvVaw3DbPDzcZn0CfwltZR_nrAH">
+             <span class="XLloXe AP7Wnd">
+              functional
+             </span>
+            </a>
+           </span>
+           <span class="r0bn4c rQMQod">
+            ,
+           </span>
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Imperative_programming&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Qs2YwEHoECAoQEg&amp;usg=AOvVaw2kUMLYcOdp0vP9OzDTvGjP">
+             <span class="XLloXe AP7Wnd">
+              imperative
+             </span>
+            </a>
+           </span>
+           <span class="r0bn4c rQMQod">
+            ,
+           </span>
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Object-oriented_programming&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Qs2YwEHoECAoQEw&amp;usg=AOvVaw2HWKpNafLdIdVmIrAv6ndk">
+             <span class="XLloXe AP7Wnd">
+              object-oriented
+             </span>
+            </a>
+           </span>
+           <span class="r0bn4c rQMQod">
+            ,
+           </span>
+           <span class="BNeawe">
+            <a href="/url?q=https://en.wikipedia.org/wiki/Reflective_programming&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Qs2YwEHoECAoQFA&amp;usg=AOvVaw1Zv5TDpw6jrNiiKsaN5iwp">
+             <span class="XLloXe AP7Wnd">
+              reflective
+             </span>
+            </a>
+           </span>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="ZINbbc xpd O9g5cc uUPGi">
+     <div class="kCrYT">
+      <a href="/url?q=https://www.codecademy.com/learn/learn-python&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QFjARegQIBBAB&amp;usg=AOvVaw0pREiDItkdMlussK088QXk">
+       <div class="BNeawe vvjwJb AP7Wnd">
+        Python Tutorial: Learn Python For Free | Codecademy
+       </div>
+       <div class="BNeawe UPmit AP7Wnd">
+        https://www.codecademy.com › learn › learn-python
+       </div>
+      </a>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           Learn Python, a powerful language used by sites like YouTube and Dropbox. Learn the fundamentals of programming to build web apps and manipulate data.
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="ZINbbc xpd O9g5cc uUPGi">
+     <div class="kCrYT">
+      <a href="/url?q=https://www.geeksforgeeks.org/python-programming-language/&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QFjASegQIBRAB&amp;usg=AOvVaw3Rf4Pz22A3REZNHslrEMt8">
+       <div class="BNeawe vvjwJb AP7Wnd">
+        Python Programming Language - GeeksforGeeks
+       </div>
+       <div class="BNeawe UPmit AP7Wnd">
+        https://www.geeksforgeeks.org › python-programming-language
+       </div>
+      </a>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           Basics, Input/Output, Data Types, Variables, Operators, Control Flow, Functions, Object Oriented Concepts, Exception Handling, Modules in Python, Working ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="ZINbbc xpd O9g5cc uUPGi">
+     <div class="kCrYT">
+      <a href="/url?q=https://github.com/python&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QFjATegQIAhAB&amp;usg=AOvVaw1teyOXRsu8dzbNCFwzVb8C">
+       <div class="BNeawe vvjwJb AP7Wnd">
+        Python · GitHub
+       </div>
+       <div class="BNeawe UPmit AP7Wnd">
+        https://github.com › python
+       </div>
+      </a>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           Repositories related to the Python Programming language - Python.
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="ZINbbc xpd O9g5cc uUPGi">
+     <div class="kCrYT">
+      <a href="/url?q=https://www.learnpython.org/&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QFjAUegQIAxAB&amp;usg=AOvVaw1kmZD0o_l6Fiq2eeMm10zP">
+       <div class="BNeawe vvjwJb AP7Wnd">
+        Learn Python - Free Interactive Python Tutorial
+       </div>
+       <div class="BNeawe UPmit AP7Wnd">
+        https://www.learnpython.org
+       </div>
+      </a>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           learnpython.org is a free interactive Python tutorial for people who want to learn Python, fast.
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="ZINbbc xpd O9g5cc uUPGi">
+     <div class="kCrYT">
+      <a href="/url?q=https://developers.google.com/edu/python&amp;sa=U&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0QFjAVegQIARAB&amp;usg=AOvVaw1OPVCodKzHQetAgu3jZipb">
+       <div class="BNeawe vvjwJb AP7Wnd">
+        Google's Python Class | Python Education | Google Developers
+       </div>
+       <div class="BNeawe UPmit AP7Wnd">
+        https://developers.google.com › edu › python
+       </div>
+      </a>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="kCrYT">
+      <div>
+       <div class="BNeawe s3v9rd AP7Wnd">
+        <div>
+         <div>
+          <div class="BNeawe s3v9rd AP7Wnd">
+           Welcome to Google's Python Class -- this is a free class for people with a little bit of programming experience who want to learn Python. The class includes ...
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+   <div>
+    <div class="ZINbbc xpd O9g5cc uUPGi">
+     <div class="kCrYT">
+      <span>
+       <div class="BNeawe deIvCb AP7Wnd">
+        <span class="FCUp0c rQMQod">
+         Related searches
+        </span>
+       </div>
+      </span>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="X7NTVe">
+      <a class="tHmfQe" href="/search?ie=UTF-8&amp;q=python+software&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q1QJ6BAgAEAE">
+       <div class="am3QBf">
+        <div>
+         <span>
+          <div class="BNeawe deIvCb AP7Wnd">
+           python software
+          </div>
+         </span>
+        </div>
+       </div>
+      </a>
+      <div class="HBTM6d XS7yGd">
+       <a href="/search?ie=UTF-8&amp;q=python+software">
+        <div class="BNeawe mAdjQc uEec3 AP7Wnd">
+         &gt;
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="X7NTVe">
+      <a class="tHmfQe" href="/search?ie=UTF-8&amp;q=python+download&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q1QJ6BAgAEAI">
+       <div class="am3QBf">
+        <div>
+         <span>
+          <div class="BNeawe deIvCb AP7Wnd">
+           python download
+          </div>
+         </span>
+        </div>
+       </div>
+      </a>
+      <div class="HBTM6d XS7yGd">
+       <a href="/search?ie=UTF-8&amp;q=python+download">
+        <div class="BNeawe mAdjQc uEec3 AP7Wnd">
+         &gt;
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="X7NTVe">
+      <a class="tHmfQe" href="/search?ie=UTF-8&amp;q=what+is+python+used+for&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q1QJ6BAgAEAM">
+       <div class="am3QBf">
+        <div>
+         <span>
+          <div class="BNeawe deIvCb AP7Wnd">
+           what is python used for
+          </div>
+         </span>
+        </div>
+       </div>
+      </a>
+      <div class="HBTM6d XS7yGd">
+       <a href="/search?ie=UTF-8&amp;q=what+is+python+used+for">
+        <div class="BNeawe mAdjQc uEec3 AP7Wnd">
+         &gt;
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="X7NTVe">
+      <a class="tHmfQe" href="/search?ie=UTF-8&amp;q=python+tutorial&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q1QJ6BAgAEAQ">
+       <div class="am3QBf">
+        <div>
+         <span>
+          <div class="BNeawe deIvCb AP7Wnd">
+           python tutorial
+          </div>
+         </span>
+        </div>
+       </div>
+      </a>
+      <div class="HBTM6d XS7yGd">
+       <a href="/search?ie=UTF-8&amp;q=python+tutorial">
+        <div class="BNeawe mAdjQc uEec3 AP7Wnd">
+         &gt;
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="X7NTVe">
+      <a class="tHmfQe" href="/search?ie=UTF-8&amp;q=python+3&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q1QJ6BAgAEAU">
+       <div class="am3QBf">
+        <div>
+         <span>
+          <div class="BNeawe deIvCb AP7Wnd">
+           python 3
+          </div>
+         </span>
+        </div>
+       </div>
+      </a>
+      <div class="HBTM6d XS7yGd">
+       <a href="/search?ie=UTF-8&amp;q=python+3">
+        <div class="BNeawe mAdjQc uEec3 AP7Wnd">
+         &gt;
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="X7NTVe">
+      <a class="tHmfQe" href="/search?ie=UTF-8&amp;q=python+syntax&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q1QJ6BAgAEAY">
+       <div class="am3QBf">
+        <div>
+         <span>
+          <div class="BNeawe deIvCb AP7Wnd">
+           python syntax
+          </div>
+         </span>
+        </div>
+       </div>
+      </a>
+      <div class="HBTM6d XS7yGd">
+       <a href="/search?ie=UTF-8&amp;q=python+syntax">
+        <div class="BNeawe mAdjQc uEec3 AP7Wnd">
+         &gt;
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="X7NTVe">
+      <a class="tHmfQe" href="/search?ie=UTF-8&amp;q=learn+python&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q1QJ6BAgAEAc">
+       <div class="am3QBf">
+        <div>
+         <span>
+          <div class="BNeawe deIvCb AP7Wnd">
+           learn python
+          </div>
+         </span>
+        </div>
+       </div>
+      </a>
+      <div class="HBTM6d XS7yGd">
+       <a href="/search?ie=UTF-8&amp;q=learn+python">
+        <div class="BNeawe mAdjQc uEec3 AP7Wnd">
+         &gt;
+        </div>
+       </a>
+      </div>
+     </div>
+     <div class="x54gtf">
+     </div>
+     <div class="X7NTVe">
+      <a class="tHmfQe" href="/search?ie=UTF-8&amp;q=python+for+beginners&amp;sa=X&amp;ved=2ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q1QJ6BAgAEAg">
+       <div class="am3QBf">
+        <div>
+         <span>
+          <div class="BNeawe deIvCb AP7Wnd">
+           python for beginners
+          </div>
+         </span>
+        </div>
+       </div>
+      </a>
+      <div class="HBTM6d XS7yGd">
+       <a href="/search?ie=UTF-8&amp;q=python+for+beginners">
+        <div class="BNeawe mAdjQc uEec3 AP7Wnd">
+         &gt;
+        </div>
+       </a>
+      </div>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <div>
+     <div class="ZINbbc xpd O9g5cc uUPGi BmP5tf">
+      <div class="nMymef MUxGbd lyLwlc">
+       <a aria-label="Next page" class="nBDE1b G5eFlf" href="/search?q=python&amp;ie=UTF-8&amp;ei=Lo6kXeGmJvG55OUPn7mJ6As&amp;start=10&amp;sa=N">
+        Next &gt;
+       </a>
+      </div>
+     </div>
+    </div>
+    <div id="mCljob">
+     <div>
+      <a href="/url?q=https://accounts.google.com/ServiceLogin%3Fcontinue%3Dhttps://www.google.com/search%253Fq%253Dpython%26hl%3Den&amp;sa=U&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Qxs8CCHw&amp;usg=AOvVaw2GUyPsSpiO3MTyM8jXMlPt">
+       Sign in
+      </a>
+     </div>
+     <div>
+      <a class="ksTU4c" href="https://www.google.com/preferences?hl=en&amp;fg=1&amp;sa=X&amp;ved=0ahUKEwjh9ZvUgpzlAhXxHLkGHZ9cAr0Q5fUCCH0">
+       Settings
+      </a>
+      <a class="ksTU4c" href="//policies.google.com/privacy?fg=1">
+       Privacy
+      </a>
+      <a class="ksTU4c" href="//policies.google.com/terms?fg=1">
+       Terms
+      </a>
+     </div>
+    </div>
+   </footer>
+   <script nonce="ikRUUE4of7LhyUueBIvlOw==">
+    (function(){var hl='en';(function(){var b=this||self,d=/^[\w+/_-]+[=]{0,2}$/,e=null;var f=document.querySelector(".l"),g=document.querySelector("#sf"),k=g.querySelector(".sbc"),l=g.querySelector("[type=text]"),m=g.querySelector("[type=submit]"),n=g.querySelector(".sc"),p=g.querySelector(".x"),q=l.value,r=[],t=-1,u=q,w,x,y;q||(p&&(p.style.display="none"),z(!1));function z(a){if(k.classList.contains("esbc")){var c=k.classList.contains("chsbc"),h=k.classList.contains("rtlsbc");a&&(n.style.display="block",c?(g.style.borderRadius="20px 20px 0 0",n.style.borderBottom="1px solid #DFE1E5",m.style.borderRadius=h?"20px 0 0 0":"0 20px 0 0"):k.style.borderRadius=h?"0 8px 0 0":"8px 0 0 0");a||(n.style.display="none",c?(g.style.borderRadius="20px",n.style.borderBottom="none",m.style.borderRadius=h?"20px 0 0 20px":"0 20px 20px 0"):k.style.borderRadius=h?"0 8px 8px 0":"8px 0 0 8px")}}function A(){g.querySelector("[name=oq]").value=u;g.querySelector("[name=aqs]").value="heirloom-srp."+(0<=t?t:"")+"."+(0<r.length?"0l"+r.length:"")}
+function C(){w=null;if(x){var a="/complete/search?client=heirloom-srp&hl="+hl+"&json=t&callback=hS&q="+encodeURIComponent(x);"undefined"!==typeof ds&&ds&&(a+="&ds="+ds);var c=document.createElement("script");c.src=a;if(null===e)a:{a=b.document;if((a=a.querySelector&&a.querySelector("script[nonce]"))&&(a=a.nonce||a.getAttribute("nonce"))&&d.test(a)){e=a;break a}e=""}(a=e)&&c.setAttribute("nonce",a);document.body.appendChild(c);x=null;w=setTimeout(C,500)}}
+function D(){for(;n.firstChild;)n.removeChild(n.firstChild);r=[];t=-1;z(!1)}function E(){var a=n.querySelector(".scs");a&&(a.className="");0<=t?(a=n.childNodes[t],a.className="scs",q=a.textContent):q=u;l.value=q}l.addEventListener("focus",function(){f&&(f.style.display="none")},!1);l.addEventListener("blur",function(){D();f&&(f.style.display="")},!1);l.addEventListener("keyup",function(a){q=l.value;y=!1;13==a.which?A():27==a.which?(D(),f&&(f.style.display=""),q=u,l.value=q):40==a.which?(t++,t>=r.length&&(t=-1),E()):38==a.which?(t--,-1>t&&(t=r.length-1),E()):(a=q)?(p&&(p.style.display=""),x=a,w||C(),u=a):(p&&(p.style.display="none"),z(!1),D(),u="",y=!0)},!1);m.addEventListener("click",A,!1);p.addEventListener("click",function(){l.value="";p.style.display="none";z(!1)},!1);k.addEventListener("click",function(){l.focus()},!1);window.hS=function(a){if(!y){D();0==a[1].length&&z(!1);for(var c=0;c<a[1].length;c++){var h=a[1][c][0],v=document.createElement("div");v.innerHTML=h;v.addEventListener("mousedown",function(B){B.preventDefault();return!1},!1);h=h.replace(/<\/?b>/g,"");v.addEventListener("click",function(B){return function(){t=B;A();E();D();g.submit()}}(c),!1);n.appendChild(v);z(!0);r.push(h)}}};}).call(this);})();(function(){function b(a){for(a=a.target||a.srcElement;a&&"A"!=a.nodeName;)a=a.parentElement;a&&(a.href||"").match(/\/search.*[?&]tbm=isch/)&&(a.href+="&biw="+document.documentElement.clientWidth,a.href+="&bih="+document.documentElement.clientHeight)}document.addEventListener("click",b,!1);document.addEventListener("touchStart",b,!1);}).call(this);
+   </script>
+  </div>
+  <!-- cctlcm 5 cctlcm -->
+  <textarea class="csi" name="csi" style="display:none"></textarea>
+  <script nonce="ikRUUE4of7LhyUueBIvlOw==">
+   (function(){var e='Lo6kXeGmJvG55OUPn7mJ6As';var sn='web';(function(){var w=function(a){var b=0;return function(){return b<a.length?{done:!1,value:a[b++]}:{done:!0}}};var x=function(a){var b=window,d=document;if(!a||"none"==a.style.display)return 0;if(d.defaultView&&d.defaultView.getComputedStyle){var c=d.defaultView.getComputedStyle(a);if(c&&("hidden"==c.visibility||"0px"==c.height&&"0px"==c.width))return 0}if(!a.getBoundingClientRect)return 1;var f=a.getBoundingClientRect();a=f.left+b.pageXOffset;c=f.top+b.pageYOffset;var n=f.width;f=f.height;return 0>=f&&0>=n?0:0>c+f?2:c>=(b.innerHeight||d.documentElement.clientHeight)?3:0>a+n||a>=(b.innerWidth||d.documentElement.clientWidth)?4:1};var y=e,A=sn,B=[];function C(a,b,d){a="/gen_204?atyp=csi&s="+(A||"web")+"&t="+a+("&lite=1&ei="+y+"&conn="+(window.navigator&&window.navigator.connection?window.navigator.connection.type:-1)+b);b="&rt=";for(var c in d)a+=b+c+"."+d[c],b=",";return a}function D(a){a={prt:a};window.wsrt&&(a.wsrt=window.wsrt);return a}function E(a){window.ping?window.ping(a):(new Image).src=a}
+(function(){for(var a=+new Date-window.start,b=D(a),d=0,c=0,f=0,n=document.getElementsByTagName("img"),q="&imn="+n.length+"&biw="+window.innerWidth+"&bih="+window.innerHeight,F=function(g,r){g.onload=function(){c=+new Date-window.start;r&&++v==f&&(d=c,z());g.onload=null}},z=function(){q+="&ima="+f;b.aft=d;E(C("aft",q,b))},v=0,G=0,h=void 0;h=n[G++];){var t=x(h),u=1==t;u&&++f;var m=h.hasAttribute("data-deferred");B.push([h.id,t,m]);m=(t=h.complete&&!m)&&Number(h.getAttribute("data-iml"))||0;t&&m?(u&&
+++v,m&&(h=m-window.start,u&&(d=Math.max(d,h)),c=Math.max(c,h))):F(h,u)}d||(d=a);c||(c=d);v==f&&z();window.addEventListener("load",function(){window.setTimeout(function(){b.ol=+new Date-window.start;b.iml=c;var g=window.performance&&window.performance.timing;g&&(b.rqst=g.responseEnd-g.requestStart,b.rspt=g.responseEnd-g.responseStart);for(var r=g=0,H=0,l;l=B[H++];){var k="undefined"!=typeof Symbol&&Symbol.iterator&&l[Symbol.iterator];var p=k?k.call(l):{next:w(l)};k=p.next().value;l=p.next().value;p=p.next().value;k=google.ldi&&k&&google.ldi[k];k=p&&!k;!k||3!=l&&0!=l?k||1!=l&&2!=l||++g:++r}q+="&ime="+g+"&imeb="+r;E(C("all",q,b))},0)},!1)})();}).call(this);})();
+  </script>
+  <script nonce="ikRUUE4of7LhyUueBIvlOw==">
+   function _setImagesSrc(e,c){function f(a){a.onerror=function(){a.style.display="none"};google.adi&&(google.adiv||"1"!=a.getAttribute("data-atf"))&&(a.decoding="async");a.src=c}for(var g=0,b=void 0;b=e[g++];){var d=document.getElementById(b)||document.querySelector("img[data-iid="+b+"]");d?f(d):(window.google=window.google||{},google.iir=google.iir||{},google.iir[b]=c)}};(function(){var s='data:image/png;base64,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\x3d';var i=['dimg_1'];_setImagesSrc(i,s);})();(function(){var s='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHAAAABwCAMAAADxPgR5AAAAaVBMVEX///8Ao+AAoN8Ant6Nyu33/f+P0O8gp+Gp3/Sp2fIZrOKh0O8Amd2Ay+36/f4Am91KsuXJ5/ex3PPg9fu95Pbq9vzu+v2j1PDf8PrU7PhcvOgzsOQAldx0w+s4rONqv+lLt+ad2vLG6/cWCBIIAAACGUlEQVRoge3Z23KqMBSAYUgIFAUCyCkian3/h9xBOpu1kIN2SC46679xxkC+WkSb1HEoiqIoiqL27wSrLIAprBbmQQaSng3QHeMEEkgggQS+U5KIoSTZBBPUy0Qrg88DRFU2jSryMKyPx2P9laumFKtgDitKNN0JDaoJJkothd65dV3GOZc6/eAezrVaA4P+qJ/kNUNTfl3GMR4d4VDVFGGXulyf3X/njdMzjQdr4AEenE7ACJwnERhetQUhGNsF5Aj05QL2zAS45hFI4Hsgc8enjIM8ivr7X3/UWAJvefasvnMrYBD+PCua4XlroCY7y6DT9BPaBJ3ONpjZBk/6frQKitYy6KS2wdufB2MNuvBEAgncE2xtg9fCPHiHYJCbB88cDtZoEWgEjCUaQ5upRsAcTXpujIMKvsLJRTQCVugPTNbBRbcREN0XOngVzYDoXaN/qV32n/xGb6i9wAcCXcbSW+f5vu95XYq+R/cCxXWyENKrEj484AXLXqDjwyu13H5gGawuLvcH8b1vAxS3d8QdQadMpbvZR+DW9mV5336NH4EcDM/ul1Yx33rnyE/AGLyA+Q3apGiXd8/0jRmxFn2u+/Br9BV05NhlYUdYhK18MTUlJQ/aeLKT6sSXccaI15MhvRDOxk6zXp/y237X9LnZOmySssPZV3MnlGDCh0I/jbYWhZkqVQw9MmXjf6kURVEURVEURf26f2WkNbya43Z8AAAAAElFTkSuQmCC';var i=['dimg_3'];_setImagesSrc(i,s);})();(function(){var s='data:image/png;base64,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';var i=['dimg_5'];_setImagesSrc(i,s);})();(function(){var s='data:image/jpeg;base64,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';var i=['dimg_7'];_setImagesSrc(i,s);})();(function(){var s='data:image/jpeg;base64,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\x3d\x3d';var i=['dimg_9'];_setImagesSrc(i,s);})();(function(){var s='data:image/png;base64,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\x3d\x3d';var i=['dimg_11'];_setImagesSrc(i,s);})();(function(){var s='data:image/jpeg;base64,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\x3d';var i=['dimg_13'];_setImagesSrc(i,s);})();(function(){var e='Lo6kXeGmJvG55OUPn7mJ6As';(function(){var a=e,b=window.performance&&window.performance.navigation;b&&2==b.type&&window.ping("/gen_204?ct=backbutton&ei="+a);}).call(this);})();(function(){(function(){google.csct={};google.csct.ps='AOvVaw2_m-fy77PAaZrZnndYWN4P\x26ust\x3d1571151790661842';})();})();(function(){(function(){google.csct.rd=true;})();})();(function(){window.xp=function(a){function e(h,f,g){return"xp"+("x"==f?"c":"x")+g}for(var b=/\bxp(x|c)(\d?)\b/;a;){var c=a.className,d=c.match(b);if(d){a.className=c.replace(b,e);if("c"==d[1])for(a=a.getElementsByTagName("img"),b=0;b<a.length;++b)if(c=a[b],d=c.getAttribute("data-ll"))c.src=d,c.removeAttribute("data-ll");break}a=a.parentElement}};})();google.drty&&google.drty();
+  </script>
+ </body>
+</html>

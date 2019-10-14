@@ -1,5 +1,5 @@
 #! /usr/bin/python3
-# Commandline argument is the search term; Google search the term; Open top N links in new tabs
+# Commandline argument is the search term; Go to Imgur and download first 10 images
 
 import logging
 from bs4 import BeautifulSoup
@@ -25,6 +25,26 @@ def fileToSoup(fileName):
         strFile = f.read()
     logging.debug("First 500 bytes of file: " + fileName + "\n\n--------------------\n\n" + strFile[:500])
     return BeautifulSoup(strFile, "html.parser")
+
+def returnImgurGalleryLinks(soupObject):
+    elems = soupObject.find_all("a",{"class":"image-list-link"})
+    galleryLink = []
+    logging.debug("Number of elements found: " + str(len(elems)))
+   
+    for i, link in enumerate(elems):
+        tempLink = elems[i]['href']
+        tempLink = 'https://imgur.com' + tempLink
+        galleryLink.append(tempLink)
+    
+    return galleryLink
+
+def saveImageFromGallery(urlList, headers, folder):
+    for i in urlList: 
+        returnSoup(i, headers)
+
+def getImageFromGalleryPage(soupObject):
+    elems = soupObject.find("div":{"class":"image post-image"})
+
 
 def returnGoogleLinks(soupObject):
     elems = soupObject.find_all("div",{"class":"kCrYT"})
@@ -58,13 +78,16 @@ if __name__ == "__main__":
     logging.debug("[Non-trivial] Commandline arg is: " + searchTerm)
 
     # Setup requests parameters
-    baseURL = "https://google.com/search?q="
+    baseURL = "https://imgur.com/search/score/all?q="
     url = baseURL + searchTerm
     headers = requests.utils.default_headers()
     headers.update({ 'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:52.0) Gecko/20100101 Firefox/52.0'})
    
-    # fName = "temporary_google_results.txt"
-    # temporarySoup = returnSoup(url, headers)
-    # saveSoup(temporarySoup,fName) 
-    # temporarySoup = fileToSoup(fName)
-    returnGoogleLinks(returnSoup(url, headers))
+    fName = "temporary_imgur_results.txt"
+    #temporarySoup = returnSoup(url, headers)
+    #saveSoup(temporarySoup,fName) 
+    temporarySoup = fileToSoup(fName)
+    # returnGoogleLinks(returnSoup(url, headers))
+    galleryList = returnImgurGalleryLinks(temporarySoup)
+    for i in galleryList:
+
