@@ -1,11 +1,5 @@
 # Chapter 9 - Organizing Files
-In [Chapter ](https://automatetheboringstuff.com/chapter/) 
-
-## Accompanying Videos:
-- [Lesson 9 - def Statements, arguments, and the None value](https://www.youtube.com/watch?v=WB4hJJkfhLU)
-- [Lesson 10 - Global Scope and Local Scope](https://www.youtube.com/watch?v=M-CoVBK_bLE)
-- [Lesson 11 - Error Handling](https://www.youtube.com/watch?v=qS0UkqaYmfU)
-- [Lesson 12 - Writing a Guess the Number Game](https://www.youtube.com/watch?v=48WXHT0dfEY)
+In [Chapter 9](https://automatetheboringstuff.com/chapter9/) we learn about navigating the operating system folders and hierarchies. In addition to the copying, zipping of files and folders.
 
 # Summary Notes
 
@@ -24,7 +18,6 @@ zipfile module|tools provided to create, read, write, append and list a ZIP file
 ZipFileObject.extractall(optional _path_)|extract the files into the current working directory; optionally you can add a file path to a location other than current diretory
 ZipFileObject.extract(_filename_)|extract a single file from the ZIP file
 ZipFileObject.close()|close the zip file
-
 
 
 ## Zipfile Example:
@@ -289,10 +282,162 @@ def backupToZip(folder):
 
 backupToZip('/home/jeremyfbuss/AutomateTheBoringStuffTutorial/chapter09/TESTDIR_forBackupToZip')
 ```
-
 ## Practice Projects: Selective Copy
+
+```python
+#! /usr/bin/python3
+#  Copy selective files from one directory to another. 
+
+import os
+import shutil
+
+def prepDirectory(sourceDirectory, targetDirectory):
+    sourceDirectory = os.path.abspath(sourceDirectory)
+    try:
+        shutil.rmtree(sourceDirectory)
+        shutil.rmtree(targetDirectory)
+    except:
+        pass
+    os.mkdir(sourceDirectory)
+    open(os.path.join(sourceDirectory,'File_01.txt'),'a').close()
+    open(os.path.join(sourceDirectory,'File_02.txt'),'a').close()
+    open(os.path.join(sourceDirectory,'File_03.jpg'),'a').close()
+    os.mkdir(os.path.join(sourceDirectory,'subDirectory'))
+    open(os.path.join(sourceDirectory,'subDirectory','File_04.txt'),'a').close()
+    open(os.path.join(sourceDirectory,'subDirectory','File_05.jpg'),'a').close()
+
+def selectiveCopy(sourceDirectory, targetDirectory, fileExtension):
+    sourceDirectory = os.path.abspath(sourceDirectory)
+    targetDirectory = os.path.abspath(targetDirectory)
+    os.mkdir(targetDirectory)
+    for foldername, subfolders, filenames in os.walk(sourceDirectory):
+        for filename in filenames:
+            extension = os.path.splitext(filename)[1]
+            if extension == fileExtension:
+                fullFileName = os.path.join(foldername, filename)
+                print(fullFileName)
+                shutil.copy(fullFileName, targetDirectory)
+
+def main():
+    sourceDirectory = 'TESTDIR_forSelectiveCopySource'
+    targetDirectory = 'TESTDIR_forSelectiveCopyTarget'
+    
+    # Create directory with files for testing
+    prepDirectory(sourceDirectory, targetDirectory)
+
+    # Perform the actual zip of the folder 
+    selectiveCopy(sourceDirectory, targetDirectory, '.txt')
+
+if __name__ == "__main__":
+    main()
+
+```
+
 
 ## Practice Projects: Deleting Unneeded Files
 
+```python
+
+#! /usr/bin/python3
+#  Copy selective files from one directory to another. 
+
+import os
+import shutil
+
+def prepDirectory(targetDirectory):
+    targetDirectory = os.path.abspath(targetDirectory)
+    subDirectory = "subDirectory"
+    try:
+        shutil.rmtree(targetDirectory)
+    except:
+        pass
+    os.mkdir(targetDirectory)
+    os.mkdir(os.path.join(targetDirectory,subDirectory))
+    fileDicts = [
+            {"base_directory": targetDirectory, "sub_directory": "", "filename": "File_01.txt", "size": 1000},
+            {"base_directory": targetDirectory, "sub_directory": "", "filename": "File_02.txt", "size": 100000000},
+            {"base_directory": targetDirectory, "sub_directory": "", "filename": "File_03.txt", "size": 1000000},
+            {"base_directory": targetDirectory, "sub_directory": subDirectory, "filename": "File_04.txt", "size": 1000},
+            {"base_directory": targetDirectory, "sub_directory": subDirectory, "filename": "File_05.txt", "size": 100000000}
+    ]
+    for fileObject in fileDicts:
+        f = open(os.path.join(fileObject["base_directory"],fileObject["sub_directory"],fileObject["filename"]),"wb")
+        f.seek(fileObject["size"] - 1)
+        f.write(b"\0")
+        f.close()
+
+def selectiveDelete(targetDirectory, sizeThreshold):
+    targetDirectory = os.path.abspath(targetDirectory)
+    for foldername, subfolders, filenames in os.walk(targetDirectory):
+        for filename in filenames:
+            fullFileName = os.path.join(foldername, filename)
+            fileSize = os.path.getsize(fullFileName)
+            if fileSize > sizeThreshold:
+                print('File: ' + filename + ' is of size: ' + str(fileSize) + \
+                    ' which is larger than the threshold of : ' + str(sizeThreshold))
+                os.unlink(fullFileName)
+
+def main():
+    targetDirectory = 'TESTDIR_forLargeFileDelete'
+    
+    # Create directory with files for testing
+    prepDirectory(targetDirectory)
+
+    # Perform the actual zip of the folder 
+    selectiveDelete(targetDirectory, 100000)
+
+if __name__ == "__main__":
+    main()
+
+```
+
+
 ## Practice Projects: Filling in the Gaps
 
+```python
+
+#! /usr/bin/python3
+
+import os
+import shutil
+
+def prepDirectory(sourceDirectory, targetDirectory):
+    sourceDirectory = os.path.abspath(sourceDirectory)
+    try:
+        shutil.rmtree(sourceDirectory)
+        shutil.rmtree(targetDirectory)
+    except:
+        pass
+    os.mkdir(sourceDirectory)
+    open(os.path.join(sourceDirectory,'File_01.txt'),'a').close()
+    open(os.path.join(sourceDirectory,'File_02.txt'),'a').close()
+    open(os.path.join(sourceDirectory,'File_03.jpg'),'a').close()
+    os.mkdir(os.path.join(sourceDirectory,'subDirectory'))
+    open(os.path.join(sourceDirectory,'subDirectory','File_04.txt'),'a').close()
+    open(os.path.join(sourceDirectory,'subDirectory','File_05.jpg'),'a').close()
+
+def selectiveCopy(sourceDirectory, targetDirectory, fileExtension):
+    sourceDirectory = os.path.abspath(sourceDirectory)
+    targetDirectory = os.path.abspath(targetDirectory)
+    os.mkdir(targetDirectory)
+    for foldername, subfolders, filenames in os.walk(sourceDirectory):
+        for filename in filenames:
+            extension = os.path.splitext(filename)[1]
+            if extension == fileExtension:
+                fullFileName = os.path.join(foldername, filename)
+                print(fullFileName)
+                shutil.copy(fullFileName, targetDirectory)
+
+def main():
+    sourceDirectory = 'TESTDIR_forSelectiveCopySource'
+    targetDirectory = 'TESTDIR_forSelectiveCopyTarget'
+    
+    # Create directory with files for testing
+    prepDirectory(sourceDirectory, targetDirectory)
+
+    # Perform the actual zip of the folder 
+    selectiveCopy(sourceDirectory, targetDirectory, '.txt')
+
+if __name__ == "__main__":
+    main()
+```

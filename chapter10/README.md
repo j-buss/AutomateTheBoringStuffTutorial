@@ -1,5 +1,5 @@
 # Chapter 10 - Debugging
-In [Chapter 10](https://automatetheboringstuff.com/chapter10/) 
+In [Chapter 10](https://automatetheboringstuff.com/chapter10/) we examine the ways to diagnose issues with our code. How can we validate, test or solve errors in our code. This is accomplished with Exception handling, logging and using the debug tools appropriately.
 
 ## Summary Notes
 
@@ -83,12 +83,83 @@ Q:8. Why is using logging messages better than using print() to display the same
 
 Q:9. What are the differences between the Step, Over, and Out buttons in the Debug Control window?
 
+Item|Description
+----|-----------
+Step|Execute the next line of code; then pause
+Over|Execute the next line of code; however if the next line was a function - execute at full speed; then pause for next line
+Out|Execute to the end of the function; then wait (basically transforming the remaining _Step_ lines into an _Over_
+
 Q:10. After you click Go in the Debug Control window, when will the debugger stop?
+
+##### Cause the program to execute normally until it reaches a breakpoint or terminates
 
 Q:11. What is a breakpoint?
 
+##### A "stop" added to a line of code; forces execution to stop at that point
+
 Q:12. How do you set a breakpoint on a line of code in IDLE?
+
+##### Click in the left gutter
 
 ## Practice Project
 
 ### Debugging Coin Toss
+
+Here is the code from the book:
+
+```python
+import random
+guess = ''
+while guess not in ('heads', 'tails'):
+    print('Guess the coin toss! Enter heads or tails:')
+    guess = input()
+toss = random.randint(0, 1) # 0 is tails, 1 is heads
+if toss == guess:
+    print('You got it!')
+else:
+    print('Nope! Guess again!')
+    guesss = input()
+    if toss == guess:
+       print('You got it!')
+    else:
+        print('Nope. You are really bad at this game.')
+```
+
+Here is my response to the code:
+
+```python
+
+#! /usr/bin/python3
+
+import random
+import logging
+
+logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+logging.disable(logging.CRITICAL)
+logging.debug('Start of program')
+
+guess = ''
+coinStates = ['heads','tails']
+
+while guess not in coinStates:
+    print('Guess the coin toss! Enter heads or tails:')
+    guess = input()
+    logging.debug('Guess is: ' + guess)
+
+toss = random.randint(0, 1) # 0 is tails, 1 is heads
+logging.debug('Toss is: ' + str(toss) + ' Value of: ' + coinStates[toss])
+
+if coinStates[toss] == guess:
+    logging.debug('toss ' + coinStates[toss] + ' == guess ' + guess + '; first if-else statement')
+    print('You got it!')
+else:
+    logging.debug('toss <> guess; first if-else statement')
+    print('Nope! Guess again!')
+    guess = input()
+    if coinStates[toss] == guess:
+        logging.debug('toss ' + coinStates[toss] + ' == guess ' + guess + '; first if-else statement')
+        print('You got it!')
+    else:
+        print('Nope. You are really bad at this game.')
+
+```
