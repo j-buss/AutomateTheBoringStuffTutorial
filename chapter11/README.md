@@ -256,7 +256,7 @@ if __name__ == "__main__":
 ```
 
 ## PROJECT: Download all the Xkcd comic images
-### This version is my own. Completed prior to reviewing Al's solution in the book. As the book was written some time ago, my version seems to handle a few more situations and does download all images (except for composite images/videos etc.)
+#### This version is my own. Completed prior to reviewing Al's solution in the book. As the book was written some time ago, my version seems to handle a few more situations and does download all images (except for composite images/videos etc.)
 
 ```python
 #! /usr/bin/python3
@@ -351,7 +351,7 @@ if __name__ == "__main__":
 ```
 
 ## PROJECT: Download all the Xkcd comic images
-### This version is Al's from the book.
+#### This version is Al's from the book.
 
 ```python
 #! /usr/bin/python3
