@@ -1,5 +1,5 @@
 # Chapter 12 - Working with Excel Spreadsheets
-In [Chapter 12](https://automatetheboringstuff.com/chapter12/) 
+In [Chapter 12](https://automatetheboringstuff.com/chapter12/) we learn the art of working with Excel spreadsheets with python. 
 
 ## Summary Notes
 
@@ -175,7 +175,7 @@ sheet = wb.active
 
 sheet.insert_rows(intStartingRow, amount=intNumberOfEmptyRows)
 
-newFileName = os.path.splitext(strFileName)[0] + "_ROWSINSERTED" + os.path.splitext(strFileName)[1]
+newFileName = os.path.splitext(strFileName)[0] + "\_ROWSINSERTED" + os.path.splitext(strFileName)[1]
 wb.save('/mnt/chromeos/MyFiles/Downloads/' + newFileName)
 
 ```
@@ -184,3 +184,119 @@ wb.save('/mnt/chromeos/MyFiles/Downloads/' + newFileName)
 
 ```python
 
+#! /usr/bin/python3
+# invertSpreadsheet.py
+
+import openpyxl
+from openpyxl.styles import Font
+from openpyxl.utils import get_column_letter
+import pprint
+import logging
+import sys
+import os
+
+logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+# logging.disable(logging.CRITICAL)
+
+strFileName = sys.argv[1]
+newFileName = os.path.splitext(strFileName)[0] + "_INVERTED" + os.path.splitext(strFileName)[1]
+
+logging.disable(logging.CRITICAL)
+
+sourceWB = openpyxl.load_workbook(strFileName)
+sourceSheet = sourceWB.active
+
+targetWB = openpyxl.Workbook()
+targetSheet = targetWB.active
+
+max_row = sourceSheet.max_row
+max_columns = sourceSheet.max_column
+
+# loop over Rows
+for row in range(1,max_row+1):
+    for column in range(1,max_columns+1): # use same counter since it is a square
+        targetSheet.cell(row=column,column=row).value = sourceSheet.cell(row=row,column=column).value
+
+targetWB.save('/mnt/chromeos/MyFiles/Downloads/' + newFileName)
+```
+
+## Text Files to Spreadsheet
+
+```python
+
+#! /usr/bin/python3
+# textFileToSpreadsheet.py
+
+import openpyxl
+import logging
+import os
+import glob
+
+logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+logging.disable(logging.CRITICAL)
+
+dirList = glob.glob("text*.txt")
+logging.debug(dirList)
+targetWB = openpyxl.Workbook()
+targetSheet = targetWB.active
+targetFileName = "TextToExcel.xlsx"
+
+for columnCounter, fileName in enumerate(dirList):
+    logging.debug(fileName)
+    #columnCounter += 1 #Have to "convert" the columnCounter for 0 based to 1 based counter
+    rowCounter = 1 #Note - This counter starts at 1 to track row count in Excel
+    with open(fileName, 'r') as f:
+        lineOfText = f.readline()
+        rowCounter = 1
+        while lineOfText:
+            logging.debug(lineOfText)
+            targetSheet.cell(row=rowCounter,column=columnCounter+1).value = lineOfText
+            lineOfText = f.readline()
+            rowCounter += 1
+
+targetWB.save(targetFileName)
+targetWB.save('/mnt/chromeos/MyFiles/Downloads/' + targetFileName)
+```
+
+### Spreadsheet to Text Files
+
+```python
+
+#! /usr/bin/python3
+# textFileToSpreadsheet.py
+
+import openpyxl
+from openpyxl.utils import get_column_letter
+import logging
+import os
+import glob
+
+logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+logging.disable(logging.CRITICAL)
+
+
+sourceFileName = "TextToExcel.xlsx"
+sourceWB = openpyxl.load_workbook(sourceFileName)
+sourceSheet = sourceWB.active
+
+# Max Colum is the number of files that will be created. It can be known at the beginning
+max_column = sourceSheet.max_column
+logging.debug("Source File: %s found to have the following.... Max Columns: %s",sourceFileName, str(max_column))
+
+# loop over Rows
+for column in range(1,max_column+1): 
+    outputFileName = 'ExcelToText' + str(column) + '.txt'
+
+    maxRowsCurrentColumn = len(sourceSheet[get_column_letter(column)])
+    logging.debug("Current Column: " + str(column))
+    logging.debug("Current Column: " + get_column_letter(column))
+    logging.debug("Max Rows in Current Column: " + str(maxRowsCurrentColumn))
+    with open(outputFileName, 'a') as the_file:
+        logging.debug("Opened file: " + outputFileName)
+        for row in range(1,maxRowsCurrentColumn+1):
+            try:
+                the_file.write(sourceSheet.cell(row=row,column=column).value)
+                logging.debug(sourceSheet.cell(row=row,column=column).value)
+            except:
+                pass
+```
