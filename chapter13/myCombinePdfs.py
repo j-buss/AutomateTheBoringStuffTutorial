@@ -9,7 +9,7 @@ logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - 
 #logging.disable(logging.CRITICAL)
 
 pdfDirectory = "TESTDIR_combinePDFs"
-outputFilename = "allminutes.pdf"
+outputFilename = "/mnt/chromeos/MyFiles/Downloads/allminutes.pdf"
 
 try:
     os.chdir(pdfDirectory)
@@ -18,27 +18,24 @@ except:
     logging.debug("Unable to change directory to: " + pdfDirectory)
     pass
 
-try:
-    os.unlink(outputFilename)
-    logging.debug("Deleted file: " + outputFilename)
-except:
-    logging.debug("Unable to delete file: " + outputFilename)
-    pass
-
 fileList = os.listdir()
 fileList = [fname for fname in fileList if ".pdf" in fname]
 fileList.sort()
 logging.debug(fileList)
 
-pdf1File = open('meetingminutes.pdf', 'rb')
-pdf1Reader = PyPDF2.PdfFileReader(pdf1File)
 pdfWriter = PyPDF2.PdfFileWriter()
 
-for pageNum in range(pdf1Reader.numPages):
-    pageObj = pdf1Reader.getPage(pageNum)
-    pdfWriter.addPage(pageObj)
+for sourcePDF in fileList:
+    pdfFile = open(sourcePDF, 'rb')
+    pdfReader = PyPDF2.PdfFileReader(pdfFile)
 
-pdfOutputFile = open('combinedminutes.pdf','wb')
+    for pageNum in range(pdfReader.numPages):
+        pageObj = pdfReader.getPage(pageNum)
+        pdfWriter.addPage(pageObj)
+
+    #pdfFile.close()
+    logging.debug("Finished appending file: " + sourcePDF + " to the file: " + outputFilename)
+
+pdfOutputFile = open(outputFilename,'wb')
 pdfWriter.write(pdfOutputFile)
 pdfOutputFile.close()
-pdf1File.close()

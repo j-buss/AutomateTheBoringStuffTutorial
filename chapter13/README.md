@@ -68,5 +68,95 @@ Q:14. What integers represent the levels of headings available in Word documents
 ##### 0 - 4
 
 ## PROJECT: Combinging Select Pages From Many Projects
+### The following is my version of the combinePdfs.py program
+```python
+
+#! /usr/bin/python3
+
+import PyPDF2
+import os
+import shutil
+import logging
+
+logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+#logging.disable(logging.CRITICAL)
+
+pdfDirectory = "TESTDIR_combinePDFs"
+outputFilename = "/mnt/chromeos/MyFiles/Downloads/allminutes.pdf"
+
+try:
+    os.chdir(pdfDirectory)
+    logging.debug("Changed Directory to: " + pdfDirectory)
+except:
+    logging.debug("Unable to change directory to: " + pdfDirectory)
+    pass
+
+fileList = os.listdir()
+fileList = [fname for fname in fileList if ".pdf" in fname]
+fileList.sort()
+logging.debug(fileList)
+
+pdfWriter = PyPDF2.PdfFileWriter()
+
+for sourcePDF in fileList:
+    pdfFile = open(sourcePDF, 'rb')
+    pdfReader = PyPDF2.PdfFileReader(pdfFile)
+
+    for pageNum in range(pdfReader.numPages):
+        pageObj = pdfReader.getPage(pageNum)
+        pdfWriter.addPage(pageObj)
+
+    #pdfFile.close()
+    logging.debug("Finished appending file: " + sourcePDF + " to the file: " + outputFilename)
+
+pdfOutputFile = open(outputFilename,'wb')
+pdfWriter.write(pdfOutputFile)
+pdfOutputFile.close()
+```
+
+### Al's version of combinePdfs.py
+
+```python
+#! /usr/bin/python3
+
+import PyPDF2
+import os
+import logging
+
+pdfDirectory = "TESTDIR_combinePDFs"
+outputFilename = "/mnt/chromeos/MyFiles/Downloads/allminutes.pdf"
+
+try:
+    os.chdir(pdfDirectory)
+    logging.debug("Changed Directory to: " + pdfDirectory)
+except:
+    logging.debug("Unable to change directory to: " + pdfDirectory)
+
+# Get all the PDF filenames.
+pdfFiles = []
+for filename in os.listdir('.'):
+    if filename.endswith('.pdf'):
+        pdfFiles.append(filename)
+pdfFiles.sort(key=str.lower)
+
+pdfWriter = PyPDF2.PdfFileWriter()
+
+# Loop through all the PDF files.
+for filename in pdfFiles:
+    pdfFileObj = open(filename, 'rb')
+    pdfReader = PyPDF2.PdfFileReader(pdfFileObj)
+
+    # Loop through all the pages (except the first) and add them.
+    for pageNum in range(1, pdfReader.numPages):
+        pageObj = pdfReader.getPage(pageNum)
+        pdfWriter.addPage(pageObj)
+
+# Save the resulting PDF to a file.
+pdfOutput = open(outputFilename, 'wb')
+pdfWriter.write(pdfOutput)
+pdfOutput.close()
+```
+
+## Practice Projects: PDF Paranoia
 
 
