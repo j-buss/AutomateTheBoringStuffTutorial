@@ -1,15 +1,13 @@
 # Chapter 13 - DESCRIPTION
-In [Chapter ](https://automatetheboringstuff.com/chapter/) 
-
-## Accompanying Videos:
-- [Lesson 9 - def Statements, arguments, and the None value](https://www.youtube.com/watch?v=WB4hJJkfhLU)
-- [Lesson 10 - Global Scope and Local Scope](https://www.youtube.com/watch?v=M-CoVBK_bLE)
-- [Lesson 11 - Error Handling](https://www.youtube.com/watch?v=qS0UkqaYmfU)
-- [Lesson 12 - Writing a Guess the Number Game](https://www.youtube.com/watch?v=48WXHT0dfEY)
+In [Chapter 13](https://automatetheboringstuff.com/chapter13/) we work with two other common types of files: PDFs and Micrsoft Word Documents.
 
 ## Summary Notes
 
-- blab: blab blab blab
+Item|Description
+----|-----------
+PyPDF2|External library which can be used to read and create PDF documents
+
+
 
 ------
 # Chapter X - Practice Questions
