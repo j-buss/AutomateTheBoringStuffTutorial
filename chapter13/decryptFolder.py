@@ -37,6 +37,33 @@ def encryptFile(foldername, filename, password):
     resultPdf.close()
     return fullNewFilename
 
+def decryptFile(foldername, filename, password):
+    root, ext = os.path.splitext(filename)
+    root = root.replace("_encrypt","_DECRYPT") 
+    newFilename = root + ext 
+    fullFilename = os.path.join(foldername, filename)
+    fullNewFilename = os.path.join(foldername, newFilename)
+    
+    # create new filename
+    logging.debug("PDF File: " + fullFilename)
+    logging.debug("Creating File: " + fullNewFilename)
+    
+    pdfFile = open(fullFilename, 'rb')
+    pdfReader = PyPDF2.PdfFileReader(pdfFile)
+    pdfReader.decrypt(password)
+    if not decryptResponse:
+        print("Could not decrypt file: " + fullFilename)
+    else:
+        logging.debug("Decrypted file: " + fullFilename)
+    
+    pdfWriter = PyPDF2.PdfFileWriter()
+    
+    for pageNum in range(pdfReader.numPages):
+        pdfWriter.addPage(pdfReader.getPage(pageNum))
+    resultPdf = open(fullNewFilename,'wb')
+    pdfWriter.write(resultPdf)
+    resultPdf.close()
+
 def testDecryptFile(foldername, filename, password):
     fullFilename = os.path.join(foldername, filename)
     logging.debug("Trying to decrypt file: " + fullFilename)
@@ -49,30 +76,23 @@ def testDecryptFile(foldername, filename, password):
 def main():
     password = sys.argv[1]
     sourceDirectory = sys.argv[2]
-    targetDirectory = sys.argv[3]
     logging.debug("Parameters passed: ")
     logging.debug("\tPassword: " + password)
     logging.debug("\tSourceDirectory: " + sourceDirectory)
-    logging.debug("\tTargetDirectory: " + targetDirectory)
 
-    prepDirectory(sourceDirectory, targetDirectory)
+    sourceDirectory = os.path.abspath(sourceDirectory)
 
-    #os.chdir(targetDirectory)
-    targetDirectory = os.path.abspath(targetDirectory)
-
-    for foldername, subfolders, filenames in os.walk(targetDirectory):
-        #backupZipFile.write(foldername, compress_type=zipfile.ZIP_DEFLATED)
+    for foldername, subfolders, filenames in os.walk(sourceDirectory):
         for filename in filenames:
-            #newBase = os.path.basename(directoryPath) + '_'
             logging.debug("File: " + filename)
-            root, ext = os.path.splitext(filename)
-            if ext == ".pdf":
+            base, ext = os.path.splitext(filename)
+            logging.debug("Splitting Filename: " + filename)
+            logging.debug(base.split('_'))
+            if "encrypted" in base.split('_'):
                 # get file base name
 
-                encryptedFile = encryptFile(foldername, filename, password)
-                if testDecryptFile(foldername, encryptedFile, password):
-                    logging.debug("Decrypt test is successful. Ready to delete original file: " + filename)
-                    os.unlink(os.path.join(foldername, filename))
+                decryptFile(foldername, filename, password)
+                logging.debug("Decrypt successful." + filename)
 
 if __name__ == "__main__":
     main()
