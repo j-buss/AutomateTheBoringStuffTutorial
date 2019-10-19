@@ -7,7 +7,7 @@ import sys
 import shutil
 
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
-#logging.disable(logging.CRITICAL)
+logging.disable(logging.CRITICAL)
 
 def testDecryptFile(fullFilename, password):
     logging.debug("Trying to decrypt file: " + fullFilename + " with password: " + password)
@@ -18,7 +18,7 @@ def testDecryptFile(fullFilename, password):
 
 def loadPasswords(passwordFile):
     with open(passwordFile) as f:
-        upperList = f.readlines()
+        upperList = f.read().splitlines()
         lowerList = [x.lower() for x in upperList]
     return upperList + lowerList
 
