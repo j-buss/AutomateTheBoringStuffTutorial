@@ -1,5 +1,5 @@
 # Chapter 14 - Working with CSV Files and JSON Data
-In [Chapter 14](https://automatetheboringstuff.com/chapter14/) 
+In [Chapter 14](https://automatetheboringstuff.com/chapter14/) we work with 2 different types of text files. CSV and JSON. Both of which have a certain structure and are used extensively today.
 
 ## Summary Notes
 
@@ -12,19 +12,31 @@ JSON|Library to read / parse JSON files
 # Chapter X - Practice Questions
 Q:1. What are some features Excel spreadsheets have that CSV spreadsheets don’t?
 
-#### 
+#### CSV files simply have text, separated by commas; Whereas Excel spreadsheets can have formatting, styling, formulas etc.
 
 Q:2. What do you pass to csv.reader() and csv.writer() to create Reader and Writer objects?
 
+#### A file object
+
 Q:3. What modes do File objects for reader and Writer objects need to be opened in?
+
+##### reader object needs a file in read mode and writer needs a file object in write mode
 
 Q:4. What method takes a list argument and writes it to a CSV file?
 
+##### writerow
+
 Q:5. What do the delimiter and lineterminator keyword arguments do?
+
+##### delimiter tells the object that will be used as a delimiter between cells and lineterminator designates the object used to terminate lines
 
 Q:6. What function takes a string of JSON data and returns a Python data structure?
 
+##### json.loads
+
 Q:7. What function takes a Python data structure and returns a string of JSON data?
+
+##### json.dumps
 
 ## Project: Remove Header from CSV Files - My Version
 
@@ -126,3 +138,7 @@ for csvFilename in os.listdir('.'):
     for row in csvRows:
         csvWriter.writerow(row)
     csvFileObj.close()
+
+```
+## Project: Fetching Current Weather Data - My Version
+
