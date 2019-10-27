@@ -142,3 +142,164 @@ for csvFilename in os.listdir('.'):
 ```
 ## Project: Fetching Current Weather Data - My Version
 
+```python
+
+
+#! /usr/bin/python3
+
+import json
+import logging
+import sys
+import requests
+import config_OWM
+import collections
+import datetime
+from dateutil.parser import parse
+
+logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+logging.disable(logging.CRITICAL)
+
+def convertKelvinToFahrenheit(inputKelvin):
+    celsius = inputKelvin - 273.15
+    logging.debug(celsius)
+    fahrenheit = (9/5 * celsius) + 32
+    logging.debug(fahrenheit)
+    return round(fahrenheit,2)
+
+def printCurrent(currentJSON):
+    print("\n----------------------")
+    print("Forecast for: " + str(datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")))
+    print("\t" + currentJSON["weather"][0]["description"])
+    kelvinTemp = convertKelvinToFahrenheit(currentJSON["main"]["temp"])
+    logging.debug("\tTemperature (K): " + str(currentJSON["main"]["temp"]))
+    print("\tTemperature (F): " + str(convertKelvinToFahrenheit(currentJSON["main"]["temp"])))
+    logging.debug("\n-----------------")
+    logging.debug(currentJSON)
+    return None
+
+def printForecast(forecastJSON):
+    targetTime = datetime.time(hour=12,minute=0)
+    targetForecasts = []
+    tomorrow = datetime.date.today() + datetime.timedelta(days=1)
+    tomorrow2 = tomorrow + datetime.timedelta(days=1)
+    targetDT = datetime.datetime.combine(tomorrow,targetTime)
+    targetDT2 = datetime.datetime.combine(tomorrow2,targetTime)
+    targetForecasts.append(targetDT)
+    targetForecasts.append(targetDT2)
+
+    for forecast in forecastJSON["list"]:
+        if parse(forecast["dt_txt"]) in targetForecasts:
+            logging.debug("Found Match: " + str(targetDT))
+            logging.debug(forecast)
+            print("\n----------------------")
+            print("Forecast for: " + forecast["dt_txt"])
+            print("\t" + forecast["weather"][0]["description"])
+            kelvinTemp = forecast["main"]["temp"]
+            logging.debug("\tTemperature (K): " + str(kelvinTemp))
+            print("\tTemperature (F): " + str(convertKelvinToFahrenheit(kelvinTemp)))
+
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print('Usage: quickWeather.py apiName zipCode')
+        sys.exit()
+
+    apiName = sys.argv[1]
+    zipCode = sys.argv[2]
+
+    if apiName == "forecast":
+        URL = "https://api.openweathermap.org/data/2.5/forecast"
+    else:
+        URL = "https://api.openweathermap.org/data/2.5/weather"
+
+    logging.debug(config_OWM.api_key)
+    params = collections.OrderedDict([('zip',zipCode),('APPID',config_OWM.api_key)])
+
+    r = requests.get(URL, params=params)
+    r.raise_for_status()
+    
+    weatherData = json.loads(r.text)
+    if apiName == "forecast":
+        printForecast(weatherData)
+    else:
+        printCurrent(weatherData)
+
+```
+
+## Practice Project: Excel-to-csv Converter
+
+```python
+
+#! /usr/bin/python3
+
+import os
+import logging
+#import sys
+import csv
+import shutil
+import openpyxl
+from openpyxl.utils import get_column_letter
+
+logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
+logging.disable(logging.CRITICAL)
+
+def prepDirectory(sourceDirectory, targetDirectory):
+    try:
+        shutil.rmtree(targetDirectory)
+    except:
+        pass
+    
+    shutil.copytree(sourceDirectory, targetDirectory)
+
+def ExcelToCSVFile(fullFilename, rootFilename):
+    print("Converting workbook: " + fullFilename)
+    wb = openpyxl.load_workbook(fullFilename)
+   
+    for sheet in wb.sheetnames:
+        
+        # For each Sheet
+        print("...converting sheet: " + sheet)
+        csvFileName = rootFilename + "_" + sheet + ".csv"
+        print("Creating file: " + csvFileName)
+        sourceSheet = wb.get_sheet_by_name(sheet)
+        # How many columns does current sheet have?
+        sheetMaxColumn = sourceSheet.max_column
+        # How many rows does current sheet have?
+        sheetMaxRow = sourceSheet.max_row
+       
+        # Create Target File 
+        targetFile = open(csvFileName, 'w')
+        targetWriter = csv.writer(targetFile)
+        
+        logging.debug("Source File: %s sheet: %s Max Columns: %s Max Rows: %s", 
+                fullFilename, sheet, sheetMaxColumn, sheetMaxRow)
+
+        for row in range(1,sheetMaxRow+1):
+            rowArray = []
+            for column in range(1,sheetMaxColumn):
+                logging.debug(sourceSheet.cell(row=row,column=column).value)
+                rowArray.append(sourceSheet.cell(row=row,column=column).value)
+
+            logging.debug(rowArray)
+
+            targetWriter.writerow(rowArray)
+    targetFile.close()
+
+
+def ExcelToCSVDirectory(targetDirectory):
+    for foldername, subfolders, filenames in os.walk(targetDirectory): 
+        for filename in filenames:
+            fFilename = os.path.join(foldername, filename)
+            logging.debug("File: " + fFilename)
+            root, ext = os.path.splitext(fFilename)
+            
+            if ext == ".xlsx":
+                #Load workbook object
+                ExcelToCSVFile(fFilename,root)
+
+if __name__ == "__main__":
+    sourceDirectory = "TESTDIR_excelToCSVTemplate"
+    targetDirectory = "TESTDIR_excelToCSV"
+    prepDirectory(sourceDirectory, targetDirectory)
+    ExcelToCSVDirectory(targetDirectory)
+
+```

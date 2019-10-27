@@ -3,11 +3,13 @@
 import os
 import logging
 #import sys
+import csv
 import shutil
 import openpyxl
+from openpyxl.utils import get_column_letter
 
 logging.basicConfig(level=logging.DEBUG, format=' %(asctime)s - %(levelname)s - %(message)s')
-#logging.disable(logging.CRITICAL)
+logging.disable(logging.CRITICAL)
 
 def prepDirectory(sourceDirectory, targetDirectory):
     try:
@@ -17,58 +19,54 @@ def prepDirectory(sourceDirectory, targetDirectory):
     
     shutil.copytree(sourceDirectory, targetDirectory)
 
-def excelFileToCSV(targetDirectory):
+def ExcelToCSVFile(fullFilename, rootFilename):
+    print("Converting workbook: " + fullFilename)
+    wb = openpyxl.load_workbook(fullFilename)
+   
+    for sheet in wb.sheetnames:
+        
+        # For each Sheet
+        print("...converting sheet: " + sheet)
+        csvFileName = rootFilename + "_" + sheet + ".csv"
+        print("Creating file: " + csvFileName)
+        sourceSheet = wb.get_sheet_by_name(sheet)
+        # How many columns does current sheet have?
+        sheetMaxColumn = sourceSheet.max_column
+        # How many rows does current sheet have?
+        sheetMaxRow = sourceSheet.max_row
+       
+        # Create Target File 
+        targetFile = open(csvFileName, 'w')
+        targetWriter = csv.writer(targetFile)
+        
+        logging.debug("Source File: %s sheet: %s Max Columns: %s Max Rows: %s", 
+                fullFilename, sheet, sheetMaxColumn, sheetMaxRow)
+
+        for row in range(1,sheetMaxRow+1):
+            rowArray = []
+            for column in range(1,sheetMaxColumn):
+                logging.debug(sourceSheet.cell(row=row,column=column).value)
+                rowArray.append(sourceSheet.cell(row=row,column=column).value)
+
+            logging.debug(rowArray)
+
+            targetWriter.writerow(rowArray)
+    targetFile.close()
+
+
+def ExcelToCSVDirectory(targetDirectory):
     for foldername, subfolders, filenames in os.walk(targetDirectory): 
         for filename in filenames:
             fFilename = os.path.join(foldername, filename)
             logging.debug("File: " + fFilename)
             root, ext = os.path.splitext(fFilename)
+            
             if ext == ".xlsx":
                 #Load workbook object
-                print("Converting workbook: " + fFilename)
-                wb = openpyxl.load_workbook(fFilename)
-                for sheet in wb.sheetnames:
-                    print("...converting sheet: " + sheet)
-                    csvFileName = root + "_" + sheet + ".csv"
-                    print("Creating file: " + csvFileName)
-                    targetFile = open(csvFileNAme, 'w')
-                    targetWriter = csv.writer(targetFile)
-                    sourceSheet = wb.get_sheet_by_name(sheet)
-                    max_column = sourceSheet.max_column
-                    logging.debug("Source File: %s sheet: %s Max Columns: %s", filename, sheet, max_column)
-                    for column in range(1,max_column+1):
-
-                        targetWriter.writerow(row)
-                        
-                    targetFile.close()
-
-                    #wb.get_sheet_by_name(sheet)
-                    # Ceate CSV filename 
-
-
-
-    #for excelFile in os.listdir('.'):
-        # Skip non-xlsx files, load the workbook object.
-        #for sheetName in wb.get_sheet_names():
-            # Loop through every sheet in the workbook.
-            #sheet = wb.get_sheet_by_name(sheetName) 
-
-            # Create the CSV filename from the Excel filename and sheet title.
-            # Create the csv.writer object for this CSV file.  
-
-            # Loop through every row in the sheet.
-            #for rowNum in range(1, sheet.get_highest_row() + 1):
-            #    rowData = []    # append each cell to this list
-                # Loop through each cell in the row.
-            #    for colNum in range(1, sheet.get_highest_column() + 1):
-                    # Append each cell's data to rowData.  
-                    pass
-        
-                # Write the rowData list to the CSV file.
-            #csvFile.close()
+                ExcelToCSVFile(fFilename,root)
 
 if __name__ == "__main__":
     sourceDirectory = "TESTDIR_excelToCSVTemplate"
     targetDirectory = "TESTDIR_excelToCSV"
     prepDirectory(sourceDirectory, targetDirectory)
-    excelFileToCSV(targetDirectory)
+    ExcelToCSVDirectory(targetDirectory)
